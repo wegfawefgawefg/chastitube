@@ -16,7 +16,7 @@ MODEL_URL=https://huggingface.co/desplega/laya-onnx/resolve/main/typed-decisions
 
 if [ "$1" = "--uninstall" ]; then
     xdg-mime default firefox.desktop x-scheme-handler/http x-scheme-handler/https
-    rm -f "$APPS/chastitube-open.desktop" "$AUTO/chastitube.desktop" "$HOME/.local/bin/chube"
+    rm -f "$APPS/chastitube-open.desktop" "$AUTO/chastitube.desktop" "$HOME/.local/bin/chube" "$HOME/.local/bin/chastitube"
     echo "Links go straight to Firefox again. Stop the server with: kill \$(ss -ltnp 'sport = :$PORT' | grep -oP 'pid=\\K\\d+')"
     exit 0
 fi
@@ -47,9 +47,10 @@ if [ "$1" = "--tags" ] && [ ! -f "$DATA/laya/encoder.onnx" ]; then
     mv "$DATA/laya.part" "$DATA/laya"
 fi
 
-# `chube` in dmenu (or a terminal) opens the page
+# `chube` or `chastitube` in dmenu (or a terminal) opens the page
 mkdir -p "$HOME/.local/bin"
 ln -sf "$BIN" "$HOME/.local/bin/chube"
+ln -sf "$BIN" "$HOME/.local/bin/chastitube"
 
 cat > "$APPS/chastitube-open.desktop" <<EOD
 [Desktop Entry]

@@ -32,7 +32,7 @@ You need Rust (`cargo`) and Firefox.
 That builds it, starts it, starts it again at every login, and makes it the
 handler for links you click in other apps. Then:
 
-- `chube` (from dmenu or a terminal) opens it.
+- `chube` or `chastitube` (from dmenu or a terminal) opens it.
 - http://localhost:8790 works in any browser.
 - For http://chastitube, so you can just type `chastitube` in Firefox, run
   `./install.sh --name` once. It asks for sudo to add `chastitube` to
