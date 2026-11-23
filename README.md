@@ -1,9 +1,11 @@
-# chastitube
+# <img src="art/renders/cage_rust_128.png" width="48" align="top" alt=""> chastitube
 
 YouTube with search, videos and playlists, and no feed. It can't fetch the
 home page, recommendations or Mixes at all, so there's nothing to switch back on.
 
-It runs on your own computer at http://localhost:8790. Linux only for now.
+It runs on your own computer, at http://chastitube in Firefox. Linux only for now.
+
+![Search: videos on the left, playlists on the right](docs/search.png)
 
 - Search shows videos and playlists (no Shorts). You can paste a link too.
 - Videos play in YouTube's embedded player. When a video ends, the player is
@@ -17,14 +19,31 @@ It runs on your own computer at http://localhost:8790. Linux only for now.
 - YouTube links you click in other apps (Discord etc.) open in chastitube.
   Every other link goes to Firefox.
 
+![A playlist beside the player](docs/video.png)
+
 ## Install
 
 You need Rust (`cargo`) and Firefox.
 
-    ./install.sh              # build, start it, start it at login, handle links
-    ./install.sh --uninstall  # links go straight to Firefox again
+    git clone https://github.com/wegfawefgawefg/chastitube
+    cd chastitube
+    ./install.sh
 
-Run `./install.sh` again after changing the code.
+That builds it, starts it, starts it again at every login, and makes it the
+handler for links you click in other apps. Then:
+
+- `chube` (from dmenu or a terminal) opens it.
+- http://localhost:8790 works in any browser.
+- For http://chastitube, so you can just type `chastitube` in Firefox, run
+  `./install.sh --name` once. It asks for sudo to add `chastitube` to
+  `/etc/hosts` on its own loopback address (127.0.0.73, so port 80 there
+  can't clash with anything you run on localhost), to let normal programs use
+  ports below 1024 (`/etc/sysctl.d/60-chastitube.conf`), and to tell Firefox
+  that the word `chastitube` is a site, not a search (its policy file). Restart
+  Firefox after.
+
+Run `./install.sh` again after changing the code. `./install.sh --uninstall`
+makes links go straight to Firefox again.
 
 To block YouTube itself in Firefox (but keep embedded videos working), copy
 `firefox/policies.json` to `/etc/firefox/policies/policies.json` (needs sudo,
@@ -32,9 +51,9 @@ then restart Firefox). Without this, nothing stops you opening youtube.com.
 
 Your data (history, searches, resume points, watch time) is in
 `~/.local/share/chastitube/`. It only talks to YouTube, and to GitHub to
-update yt-dlp.
+update yt-dlp, which it uses for downloads.
 
-Downloads use yt-dlp, which chastitube downloads into `bin/` and keeps up to date.
+![History, with topic tags](docs/history.png)
 
 ## Topic tags (optional, off by default)
 
@@ -58,8 +77,13 @@ tagger (`bin/chastitube-tagger`, code in `tagger/`) starts at the lowest
 priority when there's a new video, uses 4 threads and about 2.4 GB of RAM
 for a few seconds per video, then exits. Nothing leaves your computer.
 
+![Time spent, by day, video and topic](docs/time.png)
+
 ## Code
 
 One Rust program, `bin/chastitube`: `serve` is the web server, `open URL` is
-the link handler. Code is in `src/`. YouTube's API is in `youtube.rs`, the
-pages are in `pages.rs` and `player.rs`, and the saved data is in `store.rs`.
+the link handler, and on its own it opens the page. Code is in `src/`.
+YouTube's API is in `youtube.rs`, the pages are in `pages.rs` and `player.rs`,
+and the saved data is in `store.rs`.
+
+The screenshots are from a demo setup, not anyone's real history.

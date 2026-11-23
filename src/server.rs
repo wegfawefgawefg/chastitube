@@ -5,7 +5,7 @@ use std::path::Path;
 use tiny_http::{Header, Request, Response, StatusCode};
 
 use crate::links::{classify, parse_time, Link};
-use crate::util::{app_dir, base, esc, port, qget, save_dir, urlencode, valid_id, valid_list};
+use crate::util::{app_dir, base, esc, own_origins, port, qget, save_dir, urlencode, valid_id, valid_list, NAME_IP};
 use crate::{pages, player, store, tabs, tags, yt};
 
 const NOT_OPENED: &str = "chastitube only opens videos and playlists. Channels, Mixes and the home page stay shut.";
@@ -87,6 +87,19 @@ pub fn serve() {
             std::process::exit(1);
         }
     };
+    // http://chastitube: port 80 on chastitube's own loopback address, if ./install.sh --name set that up
+    if port() == 8790 {
+        match tiny_http::Server::http(std::net::SocketAddr::from((NAME_IP, 80))) {
+            Ok(named) => {
+                std::thread::spawn(move || {
+                    for req in named.incoming_requests() {
+                        std::thread::spawn(move || handle(req));
+                    }
+                });
+            }
+            Err(e) => eprintln!("http://chastitube isn't available ({e}); ./install.sh --name sets it up"),
+        }
+    }
     store::start();
     std::thread::spawn(|| {
         yt::ensure_ytdlp();
@@ -138,6 +151,13 @@ fn handle(req: Request) {
 fn icon_name(name: &str) -> bool {
     let Some((color, size)) = name.strip_suffix(".png").and_then(|n| n.split_once('_')) else { return false };
     ["rust", "black", "zinc", "enamel"].contains(&color) && ["512", "256", "128", "64", "48", "32"].contains(&size)
+}
+
+/// The address this page was opened under (http://chastitube or http://localhost:8790);
+/// the YouTube player needs it to talk to the page.
+fn page_origin(req: &Request) -> String {
+    let host = req.headers().iter().find(|h| h.field.equiv("Host")).map(|h| format!("http://{}", h.value.as_str()));
+    host.filter(|h| own_origins().contains(h)).unwrap_or_else(base)
 }
 
 /// Title and channel for every video we know, for the time page.
@@ -237,7 +257,7 @@ fn video(req: Request, vid: &str, q: &[(String, String)]) {
     store::add_history(vid, &title, &channel, source, &crate::util::truncate(detail, 200));
     let saved_name = yt::saved_file(vid);
     let saved = if pl.is_some() { yt::saved_ids() } else { Default::default() };
-    let origin = base();
+    let origin = page_origin(&req);
     html(req, 200, player::video_page(&player::VideoPage {
         vid, title: &title, channel: &channel, start: start.unwrap_or(0), origin: &origin, resumed,
         saved_name: saved_name.as_deref(), pl: pl.as_deref(), positions: &positions, saved: &saved,
@@ -247,8 +267,7 @@ fn video(req: Request, vid: &str, q: &[(String, String)]) {
 fn post(mut req: Request, parts: &[&str]) {
     // Only our own page may press buttons; other websites can't reach in.
     let origin = req.headers().iter().find(|h| h.field.equiv("Origin")).map(|h| h.value.as_str().to_string());
-    let ok = [base(), format!("http://127.0.0.1:{}", port())];
-    if !origin.is_some_and(|o| ok.contains(&o)) {
+    if !origin.is_some_and(|o| own_origins().contains(&o)) {
         return text(req, 403, "forbidden");
     }
     let mut body = String::new();

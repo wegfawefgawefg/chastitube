@@ -1,13 +1,43 @@
 //! Settings, small helpers and the ID rules shared by everything else.
+use std::net::{IpAddr, SocketAddr, TcpStream, ToSocketAddrs};
 use std::path::PathBuf;
-use std::sync::{Mutex, MutexGuard};
+use std::sync::{Mutex, MutexGuard, OnceLock};
+use std::time::Duration;
 
 pub fn port() -> u16 {
     std::env::var("CHASTITUBE_PORT").ok().and_then(|p| p.parse().ok()).unwrap_or(8790)
 }
 
-pub fn base() -> String {
+/// chastitube's own loopback address. `./install.sh --name` maps the name
+/// "chastitube" to it in /etc/hosts and lets the server use port 80 there, so
+/// the page is http://chastitube/ and can't clash with anything on localhost.
+pub const NAME_IP: [u8; 4] = [127, 0, 0, 73];
+pub const NAME_URL: &str = "http://chastitube";
+
+/// The name is set up: "chastitube" resolves to NAME_IP and something answers on port 80 there.
+/// Only for the real server (default port), not test servers on other ports.
+pub fn name_works() -> bool {
+    if port() != 8790 {
+        return false;
+    }
+    let resolves = ("chastitube", 80).to_socket_addrs()
+        .map(|mut a| a.any(|a| a.ip() == IpAddr::from(NAME_IP))).unwrap_or(false);
+    resolves && TcpStream::connect_timeout(&SocketAddr::from((NAME_IP, 80)), Duration::from_millis(300)).is_ok()
+}
+
+pub fn local_base() -> String {
     format!("http://localhost:{}", port())
+}
+
+/// Where chastitube's pages live: http://chastitube if that's set up, else http://localhost:8790.
+pub fn base() -> String {
+    static BASE: OnceLock<String> = OnceLock::new();
+    BASE.get_or_init(|| if name_works() { NAME_URL.to_string() } else { local_base() }).clone()
+}
+
+/// Every address our own pages can be opened under.
+pub fn own_origins() -> [String; 3] {
+    [local_base(), format!("http://127.0.0.1:{}", port()), NAME_URL.to_string()]
 }
 
 fn home() -> PathBuf {

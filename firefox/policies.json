@@ -14,7 +14,16 @@
     "DontCheckDefaultBrowser": true,
     "Permissions": {
       "Autoplay": {
-        "Allow": ["http://localhost:8790"]
+        "Allow": [
+          "http://localhost:8790",
+          "http://chastitube"
+        ]
+      }
+    },
+    "Preferences": {
+      "browser.fixup.domainwhitelist.chastitube": {
+        "Value": true,
+        "Status": "default"
       }
     }
   }

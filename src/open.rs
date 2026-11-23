@@ -84,6 +84,30 @@ fn open_in_tab(path: &str) -> bool {
     opened
 }
 
+/// i3: focus the Firefox window showing a chastitube page. False if there isn't one.
+fn focus_tab() -> bool {
+    let out = Command::new("i3-msg").arg(r#"[class="(?i)firefox" title="chastitube — Mozilla Firefox$"] focus"#)
+        .stderr(Stdio::null()).output();
+    matches!(out, Ok(o) if String::from_utf8_lossy(&o.stdout).contains("\"success\":true"))
+}
+
+/// `chastitube` with nothing after it (or `chube` from dmenu): start the server
+/// if needed and show the page, reusing a chastitube tab that's on screen.
+pub fn open_app() {
+    ensure_server();
+    if focus_tab() {
+        return;
+    }
+    browser(&[base() + "/"]);
+    // Firefox opens the tab in its existing window; bring that window forward once the tab is there
+    for _ in 0..20 {
+        std::thread::sleep(Duration::from_millis(150));
+        if focus_tab() {
+            return;
+        }
+    }
+}
+
 pub fn open_links(args: &[String]) {
     if args.is_empty() {
         return browser(&[]);
