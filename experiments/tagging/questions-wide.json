@@ -1,0 +1,165 @@
+[
+ {
+  "id": "games",
+  "type": "noul",
+  "instructions": "Is this video about games (video games: playing, guides, playthroughs, news about games)?"
+ },
+ {
+  "id": "game development",
+  "type": "noul",
+  "instructions": "Is this video about game development (making games or game engines)?"
+ },
+ {
+  "id": "programming",
+  "type": "noul",
+  "instructions": "Is this video about programming (writing software, programming languages, code)?"
+ },
+ {
+  "id": "graphics",
+  "type": "noul",
+  "instructions": "Is this video about graphics (computer graphics, rendering, GPUs, shaders)?"
+ },
+ {
+  "id": "math",
+  "type": "noul",
+  "instructions": "Is this video about math (mathematics: algebra, calculus, geometry, group theory, proofs)?"
+ },
+ {
+  "id": "biology",
+  "type": "noul",
+  "instructions": "Is this video about biology (living things, genetics, the brain, behaviour, medicine)?"
+ },
+ {
+  "id": "history",
+  "type": "noul",
+  "instructions": "Is this video about history (past events, empires, wars, historical people)?"
+ },
+ {
+  "id": "electronics",
+  "type": "noul",
+  "instructions": "Is this video about electronics (circuits, PCBs, soldering, hardware, guitar pedals)?"
+ },
+ {
+  "id": "retro computing",
+  "type": "noul",
+  "instructions": "Is this video about retro computing (old computers and consoles, 8-bit machines, assembly)?"
+ },
+ {
+  "id": "music",
+  "type": "noul",
+  "instructions": "Is this video about music (songs, performances, composers, albums)?"
+ },
+ {
+  "id": "music production",
+  "type": "noul",
+  "instructions": "Is this video about music production (making music, mixing, synths, trackers, DAWs)?"
+ },
+ {
+  "id": "cooking",
+  "type": "noul",
+  "instructions": "Is this video about cooking (food, recipes, cooking)?"
+ },
+ {
+  "id": "travel",
+  "type": "noul",
+  "instructions": "Is this video about travel (places, trips, travel vlogs)?"
+ },
+ {
+  "id": "comedy",
+  "type": "noul",
+  "instructions": "Is this video about comedy (stand-up, sketches, jokes)?"
+ },
+ {
+  "id": "format",
+  "type": "choice",
+  "instructions": "What kind of video is this?",
+  "criteria": {
+   "lecture": "a talk or class teaching a subject",
+   "tutorial or guide": "step by step how-to",
+   "explainer": "short explanation of an idea",
+   "playthrough or let's play": "someone playing a game through",
+   "devlog or project log": "someone showing what they built",
+   "performance or song": "music being played",
+   "vlog": "someone's day or trip",
+   "documentary": "long factual film",
+   "entertainment": "for fun: comedy, challenges, reactions"
+  }
+ },
+ {
+  "id": "for kids",
+  "type": "noul",
+  "instructions": "Is this video made for young children?"
+ },
+ {
+  "id": "has music",
+  "type": "noul",
+  "instructions": "Is music the main thing in this video?"
+ },
+ {
+  "id": "selling",
+  "type": "noul",
+  "instructions": "Is the video trying to sell a product or service?"
+ },
+ {
+  "id": "live",
+  "type": "noul",
+  "instructions": "Is this a recording of a live event or stream?"
+ },
+ {
+  "id": "negative",
+  "type": "noul",
+  "instructions": "Is the tone of this video negative, angry or upsetting?"
+ },
+ {
+  "id": "news",
+  "type": "noul",
+  "instructions": "Is this video about current events or news?"
+ },
+ {
+  "id": "clickbait",
+  "type": "noul",
+  "instructions": "Does the title look like clickbait?"
+ },
+ {
+  "id": "language",
+  "type": "choice",
+  "instructions": "What language is the video in?",
+  "criteria": {
+   "English": "",
+   "Japanese": "",
+   "Spanish": "",
+   "Korean": "",
+   "Chinese": "",
+   "French": "",
+   "German": "",
+   "Hindi": "",
+   "Portuguese": "",
+   "Russian": "",
+   "Arabic": "",
+   "other": "any other language"
+  }
+ },
+ {
+  "id": "audience",
+  "type": "choice",
+  "instructions": "Who is this video mainly for?",
+  "criteria": {
+   "beginners": "people new to the subject",
+   "experts": "people who already know the subject well",
+   "kids": "children",
+   "everyone": "a general audience"
+  }
+ },
+ {
+  "id": "mood",
+  "type": "choice",
+  "instructions": "What is the main mood of the video?",
+  "criteria": {
+   "calm": "",
+   "funny": "",
+   "serious": "",
+   "exciting": "",
+   "sad": ""
+  }
+ }
+]

@@ -1,0 +1,88 @@
+[
+ {
+  "id": "games",
+  "type": "noul",
+  "instructions": "Is this video about games (video games: playing, guides, playthroughs, news about games)?"
+ },
+ {
+  "id": "game development",
+  "type": "noul",
+  "instructions": "Is this video about game development (making games or game engines)?"
+ },
+ {
+  "id": "programming",
+  "type": "noul",
+  "instructions": "Is this video about programming (writing software, programming languages, code)?"
+ },
+ {
+  "id": "graphics",
+  "type": "noul",
+  "instructions": "Is this video about graphics (computer graphics, rendering, GPUs, shaders)?"
+ },
+ {
+  "id": "math",
+  "type": "noul",
+  "instructions": "Is this video about math (mathematics: algebra, calculus, geometry, group theory, proofs)?"
+ },
+ {
+  "id": "biology",
+  "type": "noul",
+  "instructions": "Is this video about biology (living things, genetics, the brain, behaviour, medicine)?"
+ },
+ {
+  "id": "history",
+  "type": "noul",
+  "instructions": "Is this video about history (past events, empires, wars, historical people)?"
+ },
+ {
+  "id": "electronics",
+  "type": "noul",
+  "instructions": "Is this video about electronics (circuits, PCBs, soldering, hardware, guitar pedals)?"
+ },
+ {
+  "id": "retro computing",
+  "type": "noul",
+  "instructions": "Is this video about retro computing (old computers and consoles, 8-bit machines, assembly)?"
+ },
+ {
+  "id": "music",
+  "type": "noul",
+  "instructions": "Is this video about music (songs, performances, composers, albums)?"
+ },
+ {
+  "id": "music production",
+  "type": "noul",
+  "instructions": "Is this video about music production (making music, mixing, synths, trackers, DAWs)?"
+ },
+ {
+  "id": "cooking",
+  "type": "noul",
+  "instructions": "Is this video about cooking (food, recipes, cooking)?"
+ },
+ {
+  "id": "travel",
+  "type": "noul",
+  "instructions": "Is this video about travel (places, trips, travel vlogs)?"
+ },
+ {
+  "id": "comedy",
+  "type": "noul",
+  "instructions": "Is this video about comedy (stand-up, sketches, jokes)?"
+ },
+ {
+  "id": "format",
+  "type": "choice",
+  "instructions": "What kind of video is this?",
+  "criteria": {
+   "lecture": "a talk or class teaching a subject",
+   "tutorial or guide": "step by step how-to",
+   "explainer": "short explanation of an idea",
+   "playthrough or let's play": "someone playing a game through",
+   "devlog or project log": "someone showing what they built",
+   "performance or song": "music being played",
+   "vlog": "someone's day or trip",
+   "documentary": "long factual film",
+   "entertainment": "for fun: comedy, challenges, reactions"
+  }
+ }
+]

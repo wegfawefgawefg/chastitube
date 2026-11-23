@@ -1,0 +1,16 @@
+[package]
+name = "chastitube-tagger"
+version = "0.1.0"
+edition = "2021"
+description = "Optional topic tagging for chastitube: asks Laya which topics each video is about"
+
+[dependencies]
+ort = "2.0.0-rc.15"
+tokenizers = { version = "0.22", default-features = false, features = ["onig"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true

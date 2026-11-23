@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "Jfa3Q6pLJrk",
+    "title": "Monster Hunter Wilds | Long Sword Tutorial",
+    "yes": {
+      "science": 0.24,
+      "languages": 0.16
+    },
+    "raw": {
+      "science": 0.23953093588352203,
+      "languages": 0.16467227041721344
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7604690790176392,
+        0.23953093588352203
+      ],
+      "languages": [
+        0.835327684879303,
+        0.16467227041721344
+      ]
+    }
+  },
+  {
+    "id": "8wZ4quZSZ0A",
+    "title": "The ULTIMATE Long Sword Guide for Monster Hunter Wilds (TU4)",
+    "yes": {
+      "science": 0.15,
+      "languages": 0.15
+    },
+    "raw": {
+      "science": 0.14731846749782562,
+      "languages": 0.1509067565202713
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.852681577205658,
+        0.14731846749782562
+      ],
+      "languages": [
+        0.8490931987762451,
+        0.1509067565202713
+      ]
+    }
+  },
+  {
+    "id": "q8324kAWFMs",
+    "title": "Longsword in 3 Levels: A Step by Step Guide. Monster Hunter Wilds",
+    "yes": {
+      "science": 0.13,
+      "languages": 0.15
+    },
+    "raw": {
+      "science": 0.1333981156349182,
+      "languages": 0.15445885062217712
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.866601824760437,
+        0.1333981156349182
+      ],
+      "languages": [
+        0.8455411791801453,
+        0.15445885062217712
+      ]
+    }
+  },
+  {
+    "id": "KRbNvrA-FQk",
+    "title": "2 Idiots Vs Terraria's Calamity Mod | Full Movie",
+    "yes": {
+      "science": 0.18,
+      "languages": 0.15
+    },
+    "raw": {
+      "science": 0.18220371007919312,
+      "languages": 0.1494312286376953
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8177962303161621,
+        0.18220371007919312
+      ],
+      "languages": [
+        0.8505687713623047,
+        0.1494312286376953
+      ]
+    }
+  },
+  {
+    "id": "-6UhVx7D0aE",
+    "title": "I beat Terraria's Calamity Mod for the First Time - Full Movie",
+    "yes": {
+      "science": 0.15,
+      "languages": 0.07
+    },
+    "raw": {
+      "science": 0.14920128881931305,
+      "languages": 0.0732371062040329
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8507987260818481,
+        0.14920128881931305
+      ],
+      "languages": [
+        0.9267628788948059,
+        0.0732371062040329
+      ]
+    }
+  },
+  {
+    "id": "AlrGyZk3wT0",
+    "title": "Terraria - CALAMITY: The REWORKED MELEE EXPERIENCE! | Hog Wild",
+    "yes": {
+      "science": 0.4,
+      "languages": 0.11
+    },
+    "raw": {
+      "science": 0.39957594871520996,
+      "languages": 0.11282192170619965
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.6004239916801453,
+        0.39957594871520996
+      ],
+      "languages": [
+        0.8871781229972839,
+        0.11282192170619965
+      ]
+    }
+  },
+  {
+    "id": "57ZudkTSsVY",
+    "title": "Everything You Need to Know About Palworld Base Building in the 1.0 Update",
+    "yes": {
+      "science": 0.27,
+      "languages": 0.17
+    },
+    "raw": {
+      "science": 0.2738586664199829,
+      "languages": 0.17171092331409454
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7261413335800171,
+        0.2738586664199829
+      ],
+      "languages": [
+        0.8282890915870667,
+        0.17171092331409454
+      ]
+    }
+  },
+  {
+    "id": "upQo1j2d2hY",
+    "title": "Palworld Base Building Tips I Wish I Knew Sooner",
+    "yes": {
+      "science": 0.18,
+      "languages": 0.12
+    },
+    "raw": {
+      "science": 0.17793898284435272,
+      "languages": 0.12414668500423431
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8220610022544861,
+        0.17793898284435272
+      ],
+      "languages": [
+        0.8758533596992493,
+        0.12414668500423431
+      ]
+    }
+  },
+  {
+    "id": "qgIq5RyELGo",
+    "title": "Palworld 1.0 Base Build Tutorial! (The Ultimate All In 1 Base) Part 1",
+    "yes": {
+      "science": 0.18,
+      "languages": 0.22
+    },
+    "raw": {
+      "science": 0.17712350189685822,
+      "languages": 0.21578001976013184
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.822876513004303,
+        0.17712350189685822
+      ],
+      "languages": [
+        0.7842199802398682,
+        0.21578001976013184
+      ]
+    }
+  },
+  {
+    "id": "fNk_zzaMoSs",
+    "title": "Vectors | Chapter 1, Essence of linear algebra",
+    "yes": {
+      "science": 0.15,
+      "languages": 0.27
+    },
+    "raw": {
+      "science": 0.14952100813388824,
+      "languages": 0.2668461203575134
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.850479006767273,
+        0.14952100813388824
+      ],
+      "languages": [
+        0.7331538796424866,
+        0.2668461203575134
+      ]
+    }
+  },
+  {
+    "id": "kjBOesZCoqc",
+    "title": "Essence of linear algebra preview",
+    "yes": {
+      "science": 0.22,
+      "languages": 0.13
+    },
+    "raw": {
+      "science": 0.21993039548397064,
+      "languages": 0.1252530962228775
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7800695896148682,
+        0.21993039548397064
+      ],
+      "languages": [
+        0.8747469186782837,
+        0.1252530962228775
+      ]
+    }
+  },
+  {
+    "id": "kYB8IZa5AuE",
+    "title": "Linear transformations and matrices | Chapter 3, Essence of linear algebra",
+    "yes": {
+      "science": 0.19,
+      "languages": 0.21
+    },
+    "raw": {
+      "science": 0.1904999017715454,
+      "languages": 0.20817655324935913
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8095000982284546,
+        0.1904999017715454
+      ],
+      "languages": [
+        0.7918235063552856,
+        0.20817655324935913
+      ]
+    }
+  },
+  {
+    "id": "7K1sB05pE0A",
+    "title": "Lec 1 | MIT 18.01 Single Variable Calculus, Fall 2007",
+    "yes": {
+      "science": 0.1,
+      "languages": 0.13
+    },
+    "raw": {
+      "science": 0.10435746610164642,
+      "languages": 0.13352473080158234
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8956425786018372,
+        0.10435746610164642
+      ],
+      "languages": [
+        0.8664752840995789,
+        0.13352473080158234
+      ]
+    }
+  },
+  {
+    "id": "BSAA0akmPEU",
+    "title": "Lec 9 | MIT 18.01 Single Variable Calculus, Fall 2007",
+    "yes": {
+      "science": 0.15,
+      "languages": 0.12
+    },
+    "raw": {
+      "science": 0.15097668766975403,
+      "languages": 0.12101378291845322
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8490232825279236,
+        0.15097668766975403
+      ],
+      "languages": [
+        0.8789861798286438,
+        0.12101378291845322
+      ]
+    }
+  },
+  {
+    "id": "5q_3FDOkVRQ",
+    "title": "Lec 5 | MIT 18.01 Single Variable Calculus, Fall 2007",
+    "yes": {
+      "science": 0.14,
+      "languages": 0.11
+    },
+    "raw": {
+      "science": 0.1432415097951889,
+      "languages": 0.11414989084005356
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8567584753036499,
+        0.1432415097951889
+      ],
+      "languages": [
+        0.8858500719070435,
+        0.11414989084005356
+      ]
+    }
+  },
+  {
+    "id": "zkADn-9wEgc",
+    "title": "An Introduction To Group Theory",
+    "yes": {
+      "science": 0.29,
+      "languages": 0.14
+    },
+    "raw": {
+      "science": 0.28750094771385193,
+      "languages": 0.13676856458187103
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7124990224838257,
+        0.28750094771385193
+      ],
+      "languages": [
+        0.8632314801216125,
+        0.13676856458187103
+      ]
+    }
+  },
+  {
+    "id": "mH0oCDa74tE",
+    "title": "Group theory, abstraction, and the 196,883-dimensional monster",
+    "yes": {
+      "science": 0.2,
+      "languages": 0.14
+    },
+    "raw": {
+      "science": 0.1962071806192398,
+      "languages": 0.14317218959331512
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8037927746772766,
+        0.1962071806192398
+      ],
+      "languages": [
+        0.8568277955055237,
+        0.14317218959331512
+      ]
+    }
+  },
+  {
+    "id": "KufsL2VgELo",
+    "title": "What is Group Theory? — Group Theory Ep. 1",
+    "yes": {
+      "science": 0.28,
+      "languages": 0.17
+    },
+    "raw": {
+      "science": 0.28130829334259033,
+      "languages": 0.16543063521385193
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7186917066574097,
+        0.28130829334259033
+      ],
+      "languages": [
+        0.8345693349838257,
+        0.16543063521385193
+      ]
+    }
+  },
+  {
+    "id": "NOAgplgTxfc",
+    "title": "Stanford's Sapolsky On Depression in U.S. (Full Lecture)",
+    "yes": {
+      "science": 0.41,
+      "languages": 0.14
+    },
+    "raw": {
+      "science": 0.41166698932647705,
+      "languages": 0.1440550535917282
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.5883330702781677,
+        0.41166698932647705
+      ],
+      "languages": [
+        0.8559449315071106,
+        0.1440550535917282
+      ]
+    }
+  },
+  {
+    "id": "GRYcSuyLiJk",
+    "title": "Robert Sapolsky: The Biology of Humans at Our Best and Worst",
+    "yes": {
+      "science": 0.49,
+      "languages": 0.16
+    },
+    "raw": {
+      "science": 0.48527732491493225,
+      "languages": 0.16065573692321777
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.5147226452827454,
+        0.48527732491493225
+      ],
+      "languages": [
+        0.8393442630767822,
+        0.16065573692321777
+      ]
+    }
+  },
+  {
+    "id": "5izfiuLvRpk",
+    "title": "2. Human Behavioral Biology: Evolution of Behavior 1 by Robert Sapolsky",
+    "yes": {
+      "science": 0.4,
+      "languages": 0.17
+    },
+    "raw": {
+      "science": 0.40071341395378113,
+      "languages": 0.173386350274086
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.5992865562438965,
+        0.40071341395378113
+      ],
+      "languages": [
+        0.8266136050224304,
+        0.173386350274086
+      ]
+    }
+  },
+  {
+    "id": "EJYkqdpkEcE",
+    "title": "Understanding the Basics of Molecular Biology (12 Minutes)",
+    "yes": {
+      "science": 0.49,
+      "languages": 0.4
+    },
+    "raw": {
+      "science": 0.4875802993774414,
+      "languages": 0.39936456084251404
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.5124197006225586,
+        0.4875802993774414
+      ],
+      "languages": [
+        0.6006354689598083,
+        0.39936456084251404
+      ]
+    }
+  },
+  {
+    "id": "yYIZgS-L5Sc",
+    "title": "Molecular Biology",
+    "yes": {
+      "science": 0.56,
+      "languages": 0.15
+    },
+    "raw": {
+      "science": 0.558947741985321,
+      "languages": 0.15081623196601868
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.44105228781700134,
+        0.558947741985321
+      ],
+      "languages": [
+        0.8491837978363037,
+        0.15081623196601868
+      ]
+    }
+  },
+  {
+    "id": "HpH1qhcb8gQ",
+    "title": "Molecular Biology #1 2020",
+    "yes": {
+      "science": 0.43,
+      "languages": 0.22
+    },
+    "raw": {
+      "science": 0.42592546343803406,
+      "languages": 0.21509678661823273
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.5740745663642883,
+        0.42592546343803406
+      ],
+      "languages": [
+        0.7849032282829285,
+        0.21509678661823273
+      ]
+    }
+  },
+  {
+    "id": "5C_HPTJg5ek",
+    "title": "Rust in 100 Seconds",
+    "yes": {
+      "science": 0.3,
+      "languages": 0.25
+    },
+    "raw": {
+      "science": 0.3048997223377228,
+      "languages": 0.25194135308265686
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.6951003074645996,
+        0.3048997223377228
+      ],
+      "languages": [
+        0.7480586767196655,
+        0.25194135308265686
+      ]
+    }
+  },
+  {
+    "id": "0y6RKiIk6cs",
+    "title": "Rust for Dummies in 12 Minutes",
+    "yes": {
+      "science": 0.34,
+      "languages": 0.21
+    },
+    "raw": {
+      "science": 0.3434703052043915,
+      "languages": 0.21282684803009033
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.6565297245979309,
+        0.3434703052043915
+      ],
+      "languages": [
+        0.7871731519699097,
+        0.21282684803009033
+      ]
+    }
+  },
+  {
+    "id": "rQ_J9WH6CGk",
+    "title": "Rust Programming Full Course  | Learn ⚙️ in 2024 | #rustprogramming #rust",
+    "yes": {
+      "science": 0.33,
+      "languages": 0.27
+    },
+    "raw": {
+      "science": 0.33392298221588135,
+      "languages": 0.265480101108551
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.6660769581794739,
+        0.33392298221588135
+      ],
+      "languages": [
+        0.734519898891449,
+        0.265480101108551
+      ]
+    }
+  },
+  {
+    "id": "eYZhFHrfGOo",
+    "title": "Omni Devlog #1 - I'm making a game engine! :0",
+    "yes": {
+      "science": 0.3,
+      "languages": 0.07
+    },
+    "raw": {
+      "science": 0.2982483208179474,
+      "languages": 0.07250292599201202
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.701751708984375,
+        0.2982483208179474
+      ],
+      "languages": [
+        0.9274970293045044,
+        0.07250292599201202
+      ]
+    }
+  },
+  {
+    "id": "_CCn34GB4V0",
+    "title": "Making an Interface to my Dream GAME ENGINE (Devlog)",
+    "yes": {
+      "science": 0.49,
+      "languages": 0.13
+    },
+    "raw": {
+      "science": 0.49024516344070435,
+      "languages": 0.13349881768226624
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.5097548365592957,
+        0.49024516344070435
+      ],
+      "languages": [
+        0.8665011525154114,
+        0.13349881768226624
+      ]
+    }
+  },
+  {
+    "id": "nc9-v_5cYF4",
+    "title": "A New Approach to RAYTRACED LIGHTING in my VOXEL ENGINE | Devlog 5",
+    "yes": {
+      "science": 0.52,
+      "languages": 0.12
+    },
+    "raw": {
+      "science": 0.5209190845489502,
+      "languages": 0.11503614485263824
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.4790809154510498,
+        0.5209190845489502
+      ],
+      "languages": [
+        0.884963870048523,
+        0.11503614485263824
+      ]
+    }
+  },
+  {
+    "id": "Pj1P0zV4zDI",
+    "title": "Learning VULKAN by Rendering a GALAXY",
+    "yes": {
+      "science": 0.48,
+      "languages": 0.13
+    },
+    "raw": {
+      "science": 0.4842081665992737,
+      "languages": 0.13016627728939056
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.5157918334007263,
+        0.4842081665992737
+      ],
+      "languages": [
+        0.869833767414093,
+        0.13016627728939056
+      ]
+    }
+  },
+  {
+    "id": "3LyE-2LZ4JQ",
+    "title": "My Mistakes and Lessons Learned Building a Custom Vulkan Renderer",
+    "yes": {
+      "science": 0.5,
+      "languages": 0.12
+    },
+    "raw": {
+      "science": 0.4953555762767792,
+      "languages": 0.1172109991312027
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.5046444535255432,
+        0.4953555762767792
+      ],
+      "languages": [
+        0.8827890157699585,
+        0.1172109991312027
+      ]
+    }
+  },
+  {
+    "id": "asq1D62nuDA",
+    "title": "I made a VULKAN GAME ENGINE",
+    "yes": {
+      "science": 0.51,
+      "languages": 0.15
+    },
+    "raw": {
+      "science": 0.5074855089187622,
+      "languages": 0.15161915123462677
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.4925144910812378,
+        0.5074855089187622
+      ],
+      "languages": [
+        0.8483808040618896,
+        0.15161915123462677
+      ]
+    }
+  },
+  {
+    "id": "TYunMK3LCzo",
+    "title": "Klon KTR Teardown! See what's inside!",
+    "yes": {
+      "science": 0.25,
+      "languages": 0.1
+    },
+    "raw": {
+      "science": 0.24673208594322205,
+      "languages": 0.10169187933206558
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7532679438591003,
+        0.24673208594322205
+      ],
+      "languages": [
+        0.8983081579208374,
+        0.10169187933206558
+      ]
+    }
+  },
+  {
+    "id": "GvrTEGJOy-o",
+    "title": "JHS Pedals Bender Teardown! See what's inside!",
+    "yes": {
+      "science": 0.34,
+      "languages": 0.07
+    },
+    "raw": {
+      "science": 0.3360702693462372,
+      "languages": 0.06559786200523376
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.6639297008514404,
+        0.3360702693462372
+      ],
+      "languages": [
+        0.9344021081924438,
+        0.06559786200523376
+      ]
+    }
+  },
+  {
+    "id": "pDZ4V4VeQAE",
+    "title": "Greer Lightspeed Overdrive Teardown! See what's inside!",
+    "yes": {
+      "science": 0.33,
+      "languages": 0.07
+    },
+    "raw": {
+      "science": 0.33324649930000305,
+      "languages": 0.06597547233104706
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.6667535305023193,
+        0.33324649930000305
+      ],
+      "languages": [
+        0.9340245723724365,
+        0.06597547233104706
+      ]
+    }
+  },
+  {
+    "id": "PNOj6GTzfGY",
+    "title": "Programming Like It's 1979: 6502 Assembly language on the Apple ][",
+    "yes": {
+      "science": 0.3,
+      "languages": 0.22
+    },
+    "raw": {
+      "science": 0.3012630045413971,
+      "languages": 0.22141000628471375
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.6987369656562805,
+        0.3012630045413971
+      ],
+      "languages": [
+        0.7785899639129639,
+        0.22141000628471375
+      ]
+    }
+  },
+  {
+    "id": "WEliEAc3ZyA",
+    "title": "Advanced 6502 Assembly Programming for the Apple II",
+    "yes": {
+      "science": 0.45,
+      "languages": 0.19
+    },
+    "raw": {
+      "science": 0.4484425187110901,
+      "languages": 0.18564140796661377
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.5515574812889099,
+        0.4484425187110901
+      ],
+      "languages": [
+        0.8143585324287415,
+        0.18564140796661377
+      ]
+    }
+  },
+  {
+    "id": "W3mTjTpqEBI",
+    "title": "Apple II 6502 Assembly Programming with AI Coding Agent",
+    "yes": {
+      "science": 0.56,
+      "languages": 0.12
+    },
+    "raw": {
+      "science": 0.5563874840736389,
+      "languages": 0.12468242645263672
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.4436125159263611,
+        0.5563874840736389
+      ],
+      "languages": [
+        0.8753175735473633,
+        0.12468242645263672
+      ]
+    }
+  },
+  {
+    "id": "t9e8ujGi9W0",
+    "title": "EASIEST way to make BREAKCORE (or not)",
+    "yes": {
+      "science": 0.25,
+      "languages": 0.11
+    },
+    "raw": {
+      "science": 0.25094202160835266,
+      "languages": 0.1149342954158783
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.749057948589325,
+        0.25094202160835266
+      ],
+      "languages": [
+        0.8850656747817993,
+        0.1149342954158783
+      ]
+    }
+  },
+  {
+    "id": "jch3tWGYU2o",
+    "title": "MAKE REAL BREAKCORE | Trackers, renoise, breaks and experiments",
+    "yes": {
+      "science": 0.24,
+      "languages": 0.13
+    },
+    "raw": {
+      "science": 0.23848947882652283,
+      "languages": 0.13237348198890686
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7615104913711548,
+        0.23848947882652283
+      ],
+      "languages": [
+        0.8676265478134155,
+        0.13237348198890686
+      ]
+    }
+  },
+  {
+    "id": "oq8zK1FPaQ4",
+    "title": "How to Make Real REAL Breakcore (Advanced Tutorial)",
+    "yes": {
+      "science": 0.04,
+      "languages": 0.14
+    },
+    "raw": {
+      "science": 0.03893068805336952,
+      "languages": 0.142588809132576
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9610693454742432,
+        0.03893068805336952
+      ],
+      "languages": [
+        0.8574112057685852,
+        0.142588809132576
+      ]
+    }
+  },
+  {
+    "id": "ZXJWO2FQ16c",
+    "title": "Steve Reich, \"Music for 18 Musicians\" - FULL PERFORMANCE with eighth blackbird",
+    "yes": {
+      "science": 0.2,
+      "languages": 0.06
+    },
+    "raw": {
+      "science": 0.20196516811847687,
+      "languages": 0.06397702544927597
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7980347871780396,
+        0.20196516811847687
+      ],
+      "languages": [
+        0.9360229969024658,
+        0.06397702544927597
+      ]
+    }
+  },
+  {
+    "id": "71A_sm71_BI",
+    "title": "Music for 18 Musicians, by Steve Reich",
+    "yes": {
+      "science": 0.28,
+      "languages": 0.1
+    },
+    "raw": {
+      "science": 0.27561265230178833,
+      "languages": 0.09975101798772812
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7243874073028564,
+        0.27561265230178833
+      ],
+      "languages": [
+        0.9002489447593689,
+        0.09975101798772812
+      ]
+    }
+  },
+  {
+    "id": "ILpCKQlDmhc",
+    "title": "Music for 18 Musicians",
+    "yes": {
+      "science": 0.09,
+      "languages": 0.06
+    },
+    "raw": {
+      "science": 0.09425955265760422,
+      "languages": 0.062078751623630524
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9057403802871704,
+        0.09425955265760422
+      ],
+      "languages": [
+        0.9379212260246277,
+        0.062078751623630524
+      ]
+    }
+  },
+  {
+    "id": "WCZI5Jpwm7k",
+    "title": "Japanese Seasonings and Condiments 〜調味料〜  | easy Japanese home cooking recipe",
+    "yes": {
+      "science": 0.13,
+      "languages": 0.37
+    },
+    "raw": {
+      "science": 0.1277642548084259,
+      "languages": 0.36683303117752075
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8722357749938965,
+        0.1277642548084259
+      ],
+      "languages": [
+        0.6331669688224792,
+        0.36683303117752075
+      ]
+    }
+  },
+  {
+    "id": "jh9EEEiLelM",
+    "title": "7 Easy Japanese Side Dish Recipes 🇯🇵🥢  Japanese Home Cooking",
+    "yes": {
+      "science": 0.09,
+      "languages": 0.39
+    },
+    "raw": {
+      "science": 0.0883970558643341,
+      "languages": 0.38806572556495667
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9116029739379883,
+        0.0883970558643341
+      ],
+      "languages": [
+        0.6119343042373657,
+        0.38806572556495667
+      ]
+    }
+  },
+  {
+    "id": "k_yAC49WfOQ",
+    "title": "17 Days of Japanese Breakfasts 🇯🇵 | 1 Hour of Cozy Cooking, No Talking",
+    "yes": {
+      "science": 0.13,
+      "languages": 0.3
+    },
+    "raw": {
+      "science": 0.12690956890583038,
+      "languages": 0.2994768023490906
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.873090386390686,
+        0.12690956890583038
+      ],
+      "languages": [
+        0.7005231976509094,
+        0.2994768023490906
+      ]
+    }
+  },
+  {
+    "id": "bwJBoFxGK4w",
+    "title": "4 Days in Lisbon, Portugal & Sintra | Travel Vlog & Itinerary Guide",
+    "yes": {
+      "science": 0.2,
+      "languages": 0.31
+    },
+    "raw": {
+      "science": 0.2016981691122055,
+      "languages": 0.3074176609516144
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7983018159866333,
+        0.2016981691122055
+      ],
+      "languages": [
+        0.692582368850708,
+        0.3074176609516144
+      ]
+    }
+  },
+  {
+    "id": "JcstPZyleJg",
+    "title": "Lisbon, Portugal Travel Guide: Best things to do + eat in Lisbon 🇵🇹",
+    "yes": {
+      "science": 0.11,
+      "languages": 0.24
+    },
+    "raw": {
+      "science": 0.11389642208814621,
+      "languages": 0.24451421201229095
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8861035704612732,
+        0.11389642208814621
+      ],
+      "languages": [
+        0.7554858326911926,
+        0.24451421201229095
+      ]
+    }
+  },
+  {
+    "id": "897F1uFUuMA",
+    "title": "I Tried Lisbon’s Most Overrated Food",
+    "yes": {
+      "science": 0.21,
+      "languages": 0.22
+    },
+    "raw": {
+      "science": 0.21313512325286865,
+      "languages": 0.21758361160755157
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7868649363517761,
+        0.21313512325286865
+      ],
+      "languages": [
+        0.7824163436889648,
+        0.21758361160755157
+      ]
+    }
+  },
+  {
+    "id": "P3IIRiSTc3g",
+    "title": "The Complete History Of The Roman Empire In 4 Hours | Empire Without Limit (Full Series)",
+    "yes": {
+      "science": 0.22,
+      "languages": 0.2
+    },
+    "raw": {
+      "science": 0.2226054072380066,
+      "languages": 0.2007904052734375
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7773945927619934,
+        0.2226054072380066
+      ],
+      "languages": [
+        0.7992095947265625,
+        0.2007904052734375
+      ]
+    }
+  },
+  {
+    "id": "PV3r6BINlsM",
+    "title": "The Entire History of Rome in 44 Minutes",
+    "yes": {
+      "science": 0.17,
+      "languages": 0.27
+    },
+    "raw": {
+      "science": 0.16952955722808838,
+      "languages": 0.2674061357975006
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8304705023765564,
+        0.16952955722808838
+      ],
+      "languages": [
+        0.732593834400177,
+        0.2674061357975006
+      ]
+    }
+  },
+  {
+    "id": "DgGdlCOCK8s",
+    "title": "The ENTIRE History of Rome Explained: (753 BC – 1453 AD)",
+    "yes": {
+      "science": 0.25,
+      "languages": 0.16
+    },
+    "raw": {
+      "science": 0.25202083587646484,
+      "languages": 0.1625230610370636
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7479791641235352,
+        0.25202083587646484
+      ],
+      "languages": [
+        0.8374769687652588,
+        0.1625230610370636
+      ]
+    }
+  },
+  {
+    "id": "xyBgbNPrWg8",
+    "title": "DIY PCB Fabrication (Dry Film Inkjet Method)",
+    "yes": {
+      "science": 0.47,
+      "languages": 0.2
+    },
+    "raw": {
+      "science": 0.46957290172576904,
+      "languages": 0.20193925499916077
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.530427098274231,
+        0.46957290172576904
+      ],
+      "languages": [
+        0.7980607151985168,
+        0.20193925499916077
+      ]
+    }
+  },
+  {
+    "id": "RudStbSApdE",
+    "title": "The fastest way to make crisp PCBs at home!",
+    "yes": {
+      "science": 0.3,
+      "languages": 0.07
+    },
+    "raw": {
+      "science": 0.30437082052230835,
+      "languages": 0.07023999840021133
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.6956291794776917,
+        0.30437082052230835
+      ],
+      "languages": [
+        0.9297599792480469,
+        0.07023999840021133
+      ]
+    }
+  },
+  {
+    "id": "7wAer7a3tU4",
+    "title": "DIY PCBs At Home (Single Sided Presensitized)",
+    "yes": {
+      "science": 0.58,
+      "languages": 0.15
+    },
+    "raw": {
+      "science": 0.5763048529624939,
+      "languages": 0.15436282753944397
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.4236951172351837,
+        0.5763048529624939
+      ],
+      "languages": [
+        0.8456372022628784,
+        0.15436282753944397
+      ]
+    }
+  },
+  {
+    "id": "4EHRqje1DQ0",
+    "title": "Smoke If Ya Got 'Em | Adam Gilbert | Stand Up Comedy Special",
+    "yes": {
+      "science": 0.18,
+      "languages": 0.12
+    },
+    "raw": {
+      "science": 0.17557257413864136,
+      "languages": 0.12483778595924377
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8244273662567139,
+        0.17557257413864136
+      ],
+      "languages": [
+        0.8751621842384338,
+        0.12483778595924377
+      ]
+    }
+  },
+  {
+    "id": "fq08FS2lf18",
+    "title": "2 Hours of The Funniest Bits | Stand-Up Comedy Compilation",
+    "yes": {
+      "science": 0.21,
+      "languages": 0.17
+    },
+    "raw": {
+      "science": 0.20876719057559967,
+      "languages": 0.16606181859970093
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7912327647209167,
+        0.20876719057559967
+      ],
+      "languages": [
+        0.8339381217956543,
+        0.16606181859970093
+      ]
+    }
+  },
+  {
+    "id": "VbOALuHrK_M",
+    "title": "Dry Humor Has Never Been This Funny | Kellen Erskine FULL SPECIAL",
+    "yes": {
+      "science": 0.18,
+      "languages": 0.13
+    },
+    "raw": {
+      "science": 0.1810581535100937,
+      "languages": 0.12955711781978607
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8189418315887451,
+        0.1810581535100937
+      ],
+      "languages": [
+        0.8704429268836975,
+        0.12955711781978607
+      ]
+    }
+  }
+]

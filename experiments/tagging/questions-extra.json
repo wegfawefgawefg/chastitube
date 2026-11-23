@@ -1,0 +1,62 @@
+[
+ {
+  "id": "technology",
+  "type": "noul",
+  "instructions": "Is this video about technology (computers, phones, gadgets, tech news)?"
+ },
+ {
+  "id": "science",
+  "type": "noul",
+  "instructions": "Is this video about science (physics, chemistry, space, how nature works)?"
+ },
+ {
+  "id": "politics and news",
+  "type": "noul",
+  "instructions": "Is this video about politics and news (current events, politics, world news)?"
+ },
+ {
+  "id": "film and tv",
+  "type": "noul",
+  "instructions": "Is this video about film and tv (movies, shows, trailers, reviews)?"
+ },
+ {
+  "id": "sports",
+  "type": "noul",
+  "instructions": "Is this video about sports (sports games, highlights, athletes)?"
+ },
+ {
+  "id": "fitness",
+  "type": "noul",
+  "instructions": "Is this video about fitness (workouts, exercise, yoga)?"
+ },
+ {
+  "id": "diy and crafts",
+  "type": "noul",
+  "instructions": "Is this video about diy and crafts (building, repairing, woodworking, crafts)?"
+ },
+ {
+  "id": "art and design",
+  "type": "noul",
+  "instructions": "Is this video about art and design (drawing, painting, design, animation)?"
+ },
+ {
+  "id": "vehicles",
+  "type": "noul",
+  "instructions": "Is this video about vehicles (cars, motorbikes, planes, trains)?"
+ },
+ {
+  "id": "money and business",
+  "type": "noul",
+  "instructions": "Is this video about money and business (finance, investing, business, careers)?"
+ },
+ {
+  "id": "languages",
+  "type": "noul",
+  "instructions": "Is this video about languages (learning languages)?"
+ },
+ {
+  "id": "nature and animals",
+  "type": "noul",
+  "instructions": "Is this video about nature and animals (animals, pets, wildlife, nature)?"
+ }
+]

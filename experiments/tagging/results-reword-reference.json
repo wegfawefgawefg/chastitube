@@ -1,0 +1,2426 @@
+[
+  {
+    "id": "ref000",
+    "title": "CBS Weekend News Full Broadcast | November 22, 2026",
+    "yes": {
+      "science": 0.15,
+      "languages": 0.08
+    },
+    "raw": {
+      "science": 0.1462886780500412,
+      "languages": 0.08337808400392532
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8537113070487976,
+        0.1462886780500412
+      ],
+      "languages": [
+        0.9166218638420105,
+        0.08337808400392532
+      ]
+    }
+  },
+  {
+    "id": "ref001",
+    "title": "Sun Seithigal | சன் மாலை செய்திகள் | 23-11-2026 | Evening News | Sun News",
+    "yes": {
+      "science": 0.36,
+      "languages": 0.2
+    },
+    "raw": {
+      "science": 0.35646480321884155,
+      "languages": 0.20051874220371246
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.6435352563858032,
+        0.35646480321884155
+      ],
+      "languages": [
+        0.799481213092804,
+        0.20051874220371246
+      ]
+    }
+  },
+  {
+    "id": "ref002",
+    "title": "HIGHLIGHTS | Hull City v Brighton | Premier League",
+    "yes": {
+      "science": 0.06,
+      "languages": 0.08
+    },
+    "raw": {
+      "science": 0.059889908879995346,
+      "languages": 0.08238521218299866
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9401100873947144,
+        0.059889908879995346
+      ],
+      "languages": [
+        0.9176148176193237,
+        0.08238521218299866
+      ]
+    }
+  },
+  {
+    "id": "ref003",
+    "title": "NBA's Nightly Recap | November 22, 2026",
+    "yes": {
+      "science": 0.06,
+      "languages": 0.1
+    },
+    "raw": {
+      "science": 0.05861824378371239,
+      "languages": 0.09800278395414352
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9413818120956421,
+        0.05861824378371239
+      ],
+      "languages": [
+        0.9019971489906311,
+        0.09800278395414352
+      ]
+    }
+  },
+  {
+    "id": "ref004",
+    "title": "Game Recap: Nuggets 151, Bulls 145 (Nov. 22)",
+    "yes": {
+      "science": 0.0,
+      "languages": 0.0
+    },
+    "raw": {
+      "science": 0.00038975058123469353,
+      "languages": 0.004011156037449837
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9996102452278137,
+        0.00038975058123469353
+      ],
+      "languages": [
+        0.9959887862205505,
+        0.004011156037449837
+      ]
+    }
+  },
+  {
+    "id": "ref005",
+    "title": "Lewis Hamilton: The Ultimate Onboard Collection | Best Onboards | Qatar Airways",
+    "yes": {
+      "science": 0.14,
+      "languages": 0.15
+    },
+    "raw": {
+      "science": 0.13619893789291382,
+      "languages": 0.14737513661384583
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8638010621070862,
+        0.13619893789291382
+      ],
+      "languages": [
+        0.8526248931884766,
+        0.14737513661384583
+      ]
+    }
+  },
+  {
+    "id": "ref006",
+    "title": "The Hyundai Sonata is the Right Car for 2025 (In-depth Review)",
+    "yes": {
+      "science": 0.13,
+      "languages": 0.07
+    },
+    "raw": {
+      "science": 0.12550097703933716,
+      "languages": 0.06533297151327133
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8744990229606628,
+        0.12550097703933716
+      ],
+      "languages": [
+        0.9346670508384705,
+        0.06533297151327133
+      ]
+    }
+  },
+  {
+    "id": "ref007",
+    "title": "2025 Audi Q5 Premium Plus: Regular Car Reviews",
+    "yes": {
+      "science": 0.12,
+      "languages": 0.13
+    },
+    "raw": {
+      "science": 0.11703398823738098,
+      "languages": 0.13334794342517853
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8829660415649414,
+        0.11703398823738098
+      ],
+      "languages": [
+        0.8666520714759827,
+        0.13334794342517853
+      ]
+    }
+  },
+  {
+    "id": "ref008",
+    "title": "MATURE KOREAN MAKEUP TUTORIAL",
+    "yes": {
+      "science": 0.05,
+      "languages": 0.18
+    },
+    "raw": {
+      "science": 0.05186266079545021,
+      "languages": 0.17553503811359406
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9481373429298401,
+        0.05186266079545021
+      ],
+      "languages": [
+        0.8244649767875671,
+        0.17553503811359406
+      ]
+    }
+  },
+  {
+    "id": "ref009",
+    "title": "FALL FASHION HAUL! (everything i bought this season)",
+    "yes": {
+      "science": 0.05,
+      "languages": 0.1
+    },
+    "raw": {
+      "science": 0.05401095747947693,
+      "languages": 0.09942727535963058
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9459890723228455,
+        0.05401095747947693
+      ],
+      "languages": [
+        0.9005727171897888,
+        0.09942727535963058
+      ]
+    }
+  },
+  {
+    "id": "ref010",
+    "title": "Huge Autumn fashion Haul (High street & High end)",
+    "yes": {
+      "science": 0.04,
+      "languages": 0.13
+    },
+    "raw": {
+      "science": 0.04383338242769241,
+      "languages": 0.1253000646829605
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9561665654182434,
+        0.04383338242769241
+      ],
+      "languages": [
+        0.8746999502182007,
+        0.1253000646829605
+      ]
+    }
+  },
+  {
+    "id": "ref011",
+    "title": "Poppy Bobby Teaches Letters A to Z | Phonics Song for Toddlers",
+    "yes": {
+      "science": 0.15,
+      "languages": 0.29
+    },
+    "raw": {
+      "science": 0.1496935337781906,
+      "languages": 0.29481473565101624
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8503064513206482,
+        0.1496935337781906
+      ],
+      "languages": [
+        0.7051852941513062,
+        0.29481473565101624
+      ]
+    }
+  },
+  {
+    "id": "ref012",
+    "title": "the crispiest asmr ive ever done ft. the new tascam",
+    "yes": {
+      "science": 0.16,
+      "languages": 0.07
+    },
+    "raw": {
+      "science": 0.15572822093963623,
+      "languages": 0.0705268532037735
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8442718386650085,
+        0.15572822093963623
+      ],
+      "languages": [
+        0.9294731616973877,
+        0.0705268532037735
+      ]
+    }
+  },
+  {
+    "id": "ref013",
+    "title": "ASMR Can't Sleep? Let Me Whisper to You Until You Fall Asleep ♡",
+    "yes": {
+      "science": 0.19,
+      "languages": 0.22
+    },
+    "raw": {
+      "science": 0.18656030297279358,
+      "languages": 0.21834580600261688
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.813439667224884,
+        0.18656030297279358
+      ],
+      "languages": [
+        0.7816541790962219,
+        0.21834580600261688
+      ]
+    }
+  },
+  {
+    "id": "ref014",
+    "title": "Tomorrow Will Be Even Crazier: -$6 Trillion In 45 Days",
+    "yes": {
+      "science": 0.66,
+      "languages": 0.11
+    },
+    "raw": {
+      "science": 0.660071611404419,
+      "languages": 0.1101180911064148
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.33992838859558105,
+        0.660071611404419
+      ],
+      "languages": [
+        0.8898819088935852,
+        0.1101180911064148
+      ]
+    }
+  },
+  {
+    "id": "ref015",
+    "title": "10 Money Habits to Consider in 2026! Personal Finance Tips That Will Help You Have More Money!",
+    "yes": {
+      "science": 0.2,
+      "languages": 0.2
+    },
+    "raw": {
+      "science": 0.20051009953022003,
+      "languages": 0.20429319143295288
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7994899153709412,
+        0.20051009953022003
+      ],
+      "languages": [
+        0.7957068085670471,
+        0.20429319143295288
+      ]
+    }
+  },
+  {
+    "id": "ref016",
+    "title": "10 Crucial Personal Finance Lessons That Transformed My Life",
+    "yes": {
+      "science": 0.16,
+      "languages": 0.14
+    },
+    "raw": {
+      "science": 0.15792161226272583,
+      "languages": 0.1404753178358078
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8420783877372742,
+        0.15792161226272583
+      ],
+      "languages": [
+        0.8595246076583862,
+        0.1404753178358078
+      ]
+    }
+  },
+  {
+    "id": "ref017",
+    "title": "Schopenhauer In-Depth: The Total Denial of the World by the Greatest Pessimist of Philosophy",
+    "yes": {
+      "science": 0.03,
+      "languages": 0.11
+    },
+    "raw": {
+      "science": 0.031317953020334244,
+      "languages": 0.10790444910526276
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9686819911003113,
+        0.031317953020334244
+      ],
+      "languages": [
+        0.8920955061912537,
+        0.10790444910526276
+      ]
+    }
+  },
+  {
+    "id": "ref018",
+    "title": "Basic Chess Openings Explained",
+    "yes": {
+      "science": 0.16,
+      "languages": 0.29
+    },
+    "raw": {
+      "science": 0.1641271859407425,
+      "languages": 0.28501659631729126
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8358728289604187,
+        0.1641271859407425
+      ],
+      "languages": [
+        0.7149834036827087,
+        0.28501659631729126
+      ]
+    }
+  },
+  {
+    "id": "ref019",
+    "title": "8 Deadly Chess Opening Traps Every Player Should Know",
+    "yes": {
+      "science": 0.2,
+      "languages": 0.22
+    },
+    "raw": {
+      "science": 0.2015698105096817,
+      "languages": 0.21817386150360107
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7984302043914795,
+        0.2015698105096817
+      ],
+      "languages": [
+        0.7818261384963989,
+        0.21817386150360107
+      ]
+    }
+  },
+  {
+    "id": "ref020",
+    "title": "4 Fresh DIY Woodworking Projects #woodworking #diy",
+    "yes": {
+      "science": 0.43,
+      "languages": 0.18
+    },
+    "raw": {
+      "science": 0.4256117343902588,
+      "languages": 0.18304702639579773
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.5743882656097412,
+        0.4256117343902588
+      ],
+      "languages": [
+        0.8169530034065247,
+        0.18304702639579773
+      ]
+    }
+  },
+  {
+    "id": "ref021",
+    "title": "20 Years of Gardening Knowledge in 44 Minutes",
+    "yes": {
+      "science": 0.15,
+      "languages": 0.13
+    },
+    "raw": {
+      "science": 0.15113146603107452,
+      "languages": 0.1282714307308197
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8488685488700867,
+        0.15113146603107452
+      ],
+      "languages": [
+        0.8717285394668579,
+        0.1282714307308197
+      ]
+    }
+  },
+  {
+    "id": "ref022",
+    "title": "15 Years of Garden Knowledge in 1hr 56mins",
+    "yes": {
+      "science": 0.17,
+      "languages": 0.17
+    },
+    "raw": {
+      "science": 0.17124076187610626,
+      "languages": 0.16834603250026703
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8287591934204102,
+        0.17124076187610626
+      ],
+      "languages": [
+        0.8316539525985718,
+        0.16834603250026703
+      ]
+    }
+  },
+  {
+    "id": "ref023",
+    "title": "5 Dog Training Exercises You Should Do EVERY DAY At Home!",
+    "yes": {
+      "science": 0.11,
+      "languages": 0.12
+    },
+    "raw": {
+      "science": 0.10724281519651413,
+      "languages": 0.11820007860660553
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8927571773529053,
+        0.10724281519651413
+      ],
+      "languages": [
+        0.8817998766899109,
+        0.11820007860660553
+      ]
+    }
+  },
+  {
+    "id": "ref024",
+    "title": "I Guarantee These Are the Most Unhinged Cats of 2026! 🤣 Funny Cat Videos",
+    "yes": {
+      "science": 0.19,
+      "languages": 0.12
+    },
+    "raw": {
+      "science": 0.1876763552427292,
+      "languages": 0.11759783327579498
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8123236298561096,
+        0.1876763552427292
+      ],
+      "languages": [
+        0.8824021220207214,
+        0.11759783327579498
+      ]
+    }
+  },
+  {
+    "id": "ref025",
+    "title": "Best Cat Videos 🐈 | The Funniest Cat Moments You Need to See Today 🤣😹",
+    "yes": {
+      "science": 0.13,
+      "languages": 0.15
+    },
+    "raw": {
+      "science": 0.1325422078371048,
+      "languages": 0.1479654312133789
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8674577474594116,
+        0.1325422078371048
+      ],
+      "languages": [
+        0.8520346283912659,
+        0.1479654312133789
+      ]
+    }
+  },
+  {
+    "id": "ref026",
+    "title": "Salahadin Reunites with Old Friends for  Fishing Trip!A Special Meeting with His Friend Adel's Son🎣🐟",
+    "yes": {
+      "science": 0.13,
+      "languages": 0.1
+    },
+    "raw": {
+      "science": 0.13494636118412018,
+      "languages": 0.09587889164686203
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8650535941123962,
+        0.13494636118412018
+      ],
+      "languages": [
+        0.9041211009025574,
+        0.09587889164686203
+      ]
+    }
+  },
+  {
+    "id": "ref027",
+    "title": "Hiking Alone in Kyrgyzstan",
+    "yes": {
+      "science": 0.09,
+      "languages": 0.18
+    },
+    "raw": {
+      "science": 0.09190098941326141,
+      "languages": 0.17858824133872986
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9080989956855774,
+        0.09190098941326141
+      ],
+      "languages": [
+        0.8214117288589478,
+        0.17858824133872986
+      ]
+    }
+  },
+  {
+    "id": "ref028",
+    "title": "Solo Hiking 115km in the Pyrenees (Spain and France).",
+    "yes": {
+      "science": 0.26,
+      "languages": 0.25
+    },
+    "raw": {
+      "science": 0.2627357840538025,
+      "languages": 0.24848893284797668
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7372641563415527,
+        0.2627357840538025
+      ],
+      "languages": [
+        0.7515110969543457,
+        0.24848893284797668
+      ]
+    }
+  },
+  {
+    "id": "ref029",
+    "title": "The SCARIEST 48 Hours of Van Life",
+    "yes": {
+      "science": 0.18,
+      "languages": 0.12
+    },
+    "raw": {
+      "science": 0.17670221626758575,
+      "languages": 0.11835414916276932
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8232978582382202,
+        0.17670221626758575
+      ],
+      "languages": [
+        0.8816458582878113,
+        0.11835414916276932
+      ]
+    }
+  },
+  {
+    "id": "ref030",
+    "title": "The Most Perfect Start | Let's Play Hardcore Minecraft Episode 1",
+    "yes": {
+      "science": 0.2,
+      "languages": 0.13
+    },
+    "raw": {
+      "science": 0.20366153120994568,
+      "languages": 0.13070043921470642
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7963384985923767,
+        0.20366153120994568
+      ],
+      "languages": [
+        0.869299590587616,
+        0.13070043921470642
+      ]
+    }
+  },
+  {
+    "id": "ref031",
+    "title": "Let's Play Minecraft: Ep. 158 - Againderman",
+    "yes": {
+      "science": 0.25,
+      "languages": 0.11
+    },
+    "raw": {
+      "science": 0.25436729192733765,
+      "languages": 0.11138073354959488
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7456327080726624,
+        0.25436729192733765
+      ],
+      "languages": [
+        0.8886193037033081,
+        0.11138073354959488
+      ]
+    }
+  },
+  {
+    "id": "ref032",
+    "title": "Lemonade 🍋 (Fortnite Montage)",
+    "yes": {
+      "science": 0.29,
+      "languages": 0.21
+    },
+    "raw": {
+      "science": 0.2897281348705292,
+      "languages": 0.20627211034297943
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7102718353271484,
+        0.2897281348705292
+      ],
+      "languages": [
+        0.7937278747558594,
+        0.20627211034297943
+      ]
+    }
+  },
+  {
+    "id": "ref033",
+    "title": "[WR] OoT (Switch 2) Any% Speedrun in 1:51:25",
+    "yes": {
+      "science": 0.17,
+      "languages": 0.07
+    },
+    "raw": {
+      "science": 0.17328162491321564,
+      "languages": 0.06990202516317368
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8267183899879456,
+        0.17328162491321564
+      ],
+      "languages": [
+        0.9300979971885681,
+        0.06990202516317368
+      ]
+    }
+  },
+  {
+    "id": "ref034",
+    "title": "Trees Hate You Speedrun (14:59) World Record (First Sub 15!)",
+    "yes": {
+      "science": 0.13,
+      "languages": 0.08
+    },
+    "raw": {
+      "science": 0.13092736899852753,
+      "languages": 0.07532955706119537
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8690726161003113,
+        0.13092736899852753
+      ],
+      "languages": [
+        0.924670398235321,
+        0.07532955706119537
+      ]
+    }
+  },
+  {
+    "id": "ref035",
+    "title": "Love Story / Indila 【Piano Cover】",
+    "yes": {
+      "science": 0.13,
+      "languages": 0.33
+    },
+    "raw": {
+      "science": 0.12960651516914368,
+      "languages": 0.33459725975990295
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8703935146331787,
+        0.12960651516914368
+      ],
+      "languages": [
+        0.6654027104377747,
+        0.33459725975990295
+      ]
+    }
+  },
+  {
+    "id": "ref036",
+    "title": "Epic Shred Metal Guitar : EVAN K - Blue Lightning",
+    "yes": {
+      "science": 0.14,
+      "languages": 0.13
+    },
+    "raw": {
+      "science": 0.14193476736545563,
+      "languages": 0.12535908818244934
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8580652475357056,
+        0.14193476736545563
+      ],
+      "languages": [
+        0.8746408820152283,
+        0.12535908818244934
+      ]
+    }
+  },
+  {
+    "id": "ref037",
+    "title": "Top 10 Easy Metal Guitar Solos | With Tabs",
+    "yes": {
+      "science": 0.12,
+      "languages": 0.15
+    },
+    "raw": {
+      "science": 0.11761072278022766,
+      "languages": 0.15490439534187317
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.88238924741745,
+        0.11761072278022766
+      ],
+      "languages": [
+        0.8450955748558044,
+        0.15490439534187317
+      ]
+    }
+  },
+  {
+    "id": "ref038",
+    "title": "TUIDE (튜이드) 'SUN KISS' Dance Practice (Fix ver.)",
+    "yes": {
+      "science": 0.09,
+      "languages": 0.16
+    },
+    "raw": {
+      "science": 0.09121403098106384,
+      "languages": 0.16265404224395752
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9087859988212585,
+        0.09121403098106384
+      ],
+      "languages": [
+        0.8373459577560425,
+        0.16265404224395752
+      ]
+    }
+  },
+  {
+    "id": "ref039",
+    "title": "Relaxing Autumn Jazz for Studying, Work 🍂 Cozy Coffee Shop Ambience & Smooth Jazz Instrumental Music",
+    "yes": {
+      "science": 0.21,
+      "languages": 0.19
+    },
+    "raw": {
+      "science": 0.208994060754776,
+      "languages": 0.18913178145885468
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7910059094429016,
+        0.208994060754776
+      ],
+      "languages": [
+        0.8108682632446289,
+        0.18913178145885468
+      ]
+    }
+  },
+  {
+    "id": "ref040",
+    "title": "Vintage Evening Radio Jazz – 1930s 1940s Smooth Swing & Vinyl Background Music",
+    "yes": {
+      "science": 0.13,
+      "languages": 0.2
+    },
+    "raw": {
+      "science": 0.13220685720443726,
+      "languages": 0.19624045491218567
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8677932024002075,
+        0.13220685720443726
+      ],
+      "languages": [
+        0.8037595748901367,
+        0.19624045491218567
+      ]
+    }
+  },
+  {
+    "id": "ref041",
+    "title": "The Morning Routine That Sets Up Your Entire Day | Andrew Huberman | Raj Shamani Clips",
+    "yes": {
+      "science": 0.35,
+      "languages": 0.3
+    },
+    "raw": {
+      "science": 0.3467072546482086,
+      "languages": 0.3019719123840332
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.653292715549469,
+        0.3467072546482086
+      ],
+      "languages": [
+        0.6980280876159668,
+        0.3019719123840332
+      ]
+    }
+  },
+  {
+    "id": "ref042",
+    "title": "\"I SOLVED My Own DAUGHTER'S MURDER\" | The April Holt Story | True Crime Documentary",
+    "yes": {
+      "science": 0.13,
+      "languages": 0.04
+    },
+    "raw": {
+      "science": 0.12936535477638245,
+      "languages": 0.03912000730633736
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8706346154212952,
+        0.12936535477638245
+      ],
+      "languages": [
+        0.9608799815177917,
+        0.03912000730633736
+      ]
+    }
+  },
+  {
+    "id": "ref043",
+    "title": "She Thought No One Would Ever Know Her Dark Secrets...But What Her Lover Did Changed Everything",
+    "yes": {
+      "science": 0.05,
+      "languages": 0.0
+    },
+    "raw": {
+      "science": 0.050518035888671875,
+      "languages": 0.001792347989976406
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9494820237159729,
+        0.050518035888671875
+      ],
+      "languages": [
+        0.998207688331604,
+        0.001792347989976406
+      ]
+    }
+  },
+  {
+    "id": "ref044",
+    "title": "Debunking TikTok's Most Dangerous Conspiracy Theories",
+    "yes": {
+      "science": 0.3,
+      "languages": 0.24
+    },
+    "raw": {
+      "science": 0.30492404103279114,
+      "languages": 0.23832491040229797
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.6950759291648865,
+        0.30492404103279114
+      ],
+      "languages": [
+        0.7616750597953796,
+        0.23832491040229797
+      ]
+    }
+  },
+  {
+    "id": "ref045",
+    "title": "NASA set to launch new space telescope",
+    "yes": {
+      "science": 0.64,
+      "languages": 0.1
+    },
+    "raw": {
+      "science": 0.639548659324646,
+      "languages": 0.09771832078695297
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.3604513108730316,
+        0.639548659324646
+      ],
+      "languages": [
+        0.902281641960144,
+        0.09771832078695297
+      ]
+    }
+  },
+  {
+    "id": "ref046",
+    "title": "2 MINUTES AGO: James Webb Telescope Just Proved The Big Bang Theory Wrong!",
+    "yes": {
+      "science": 0.7,
+      "languages": 0.1
+    },
+    "raw": {
+      "science": 0.7025213837623596,
+      "languages": 0.10171128064393997
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.29747867584228516,
+        0.7025213837623596
+      ],
+      "languages": [
+        0.8982887268066406,
+        0.10171128064393997
+      ]
+    }
+  },
+  {
+    "id": "ref047",
+    "title": "What Happens If You Put Two Mirrors in a Perfect Vacuum?",
+    "yes": {
+      "science": 0.64,
+      "languages": 0.14
+    },
+    "raw": {
+      "science": 0.6436672210693359,
+      "languages": 0.14290989935398102
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.35633277893066406,
+        0.6436672210693359
+      ],
+      "languages": [
+        0.8570900559425354,
+        0.14290989935398102
+      ]
+    }
+  },
+  {
+    "id": "ref048",
+    "title": "25 Chemistry Experiments in 15 Minutes | Andrew Szydlo | TEDxNewcastle",
+    "yes": {
+      "science": 0.59,
+      "languages": 0.23
+    },
+    "raw": {
+      "science": 0.5929229259490967,
+      "languages": 0.22625568509101868
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.4070770740509033,
+        0.5929229259490967
+      ],
+      "languages": [
+        0.7737443447113037,
+        0.22625568509101868
+      ]
+    }
+  },
+  {
+    "id": "ref049",
+    "title": "11 Fascinating Chemistry Experiments (Compilation)",
+    "yes": {
+      "science": 0.65,
+      "languages": 0.2
+    },
+    "raw": {
+      "science": 0.6491188406944275,
+      "languages": 0.19637759029865265
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.3508812189102173,
+        0.6491188406944275
+      ],
+      "languages": [
+        0.8036224246025085,
+        0.19637759029865265
+      ]
+    }
+  },
+  {
+    "id": "ref050",
+    "title": "Medical Student Lecture: Introduction to Musculoskeletal Imaging",
+    "yes": {
+      "science": 0.46,
+      "languages": 0.13
+    },
+    "raw": {
+      "science": 0.4621979296207428,
+      "languages": 0.13020922243595123
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.5378020405769348,
+        0.4621979296207428
+      ],
+      "languages": [
+        0.8697907328605652,
+        0.13020922243595123
+      ]
+    }
+  },
+  {
+    "id": "ref051",
+    "title": "The Best Workout Routine for Complete Beginners  **BUILD MUSCLE & LOSE FAT**",
+    "yes": {
+      "science": 0.06,
+      "languages": 0.1
+    },
+    "raw": {
+      "science": 0.05793609097599983,
+      "languages": 0.09803822636604309
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9420639276504517,
+        0.05793609097599983
+      ],
+      "languages": [
+        0.9019618034362793,
+        0.09803822636604309
+      ]
+    }
+  },
+  {
+    "id": "ref052",
+    "title": "The ONLY Workout You Need For 2027 (Do This 3x/Week)",
+    "yes": {
+      "science": 0.56,
+      "languages": 0.04
+    },
+    "raw": {
+      "science": 0.5627184510231018,
+      "languages": 0.0437333770096302
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.43728160858154297,
+        0.5627184510231018
+      ],
+      "languages": [
+        0.9562666416168213,
+        0.0437333770096302
+      ]
+    }
+  },
+  {
+    "id": "ref053",
+    "title": "Gentle Seated Yoga For Beginners & All Levels | 30 Minute Practice",
+    "yes": {
+      "science": 0.0,
+      "languages": 0.13
+    },
+    "raw": {
+      "science": 0.0005163342575542629,
+      "languages": 0.13146771490573883
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.999483585357666,
+        0.0005163342575542629
+      ],
+      "languages": [
+        0.8685322999954224,
+        0.13146771490573883
+      ]
+    }
+  },
+  {
+    "id": "ref054",
+    "title": "5 meals I eat on repeat after 10 years plant based (and why)",
+    "yes": {
+      "science": 0.26,
+      "languages": 0.11
+    },
+    "raw": {
+      "science": 0.2607503831386566,
+      "languages": 0.1087348684668541
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.739249587059021,
+        0.2607503831386566
+      ],
+      "languages": [
+        0.8912651538848877,
+        0.1087348684668541
+      ]
+    }
+  },
+  {
+    "id": "ref055",
+    "title": "This Vegan Thanksgiving Menu Will Wow Everyone | Nisha Vora | NYT Cooking",
+    "yes": {
+      "science": 0.35,
+      "languages": 0.19
+    },
+    "raw": {
+      "science": 0.3529570996761322,
+      "languages": 0.19278468191623688
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.6470428705215454,
+        0.3529570996761322
+      ],
+      "languages": [
+        0.8072152733802795,
+        0.19278468191623688
+      ]
+    }
+  },
+  {
+    "id": "ref057",
+    "title": "The WORST MICHELIN STAR RESTAURANT I've Reviewed! DISAPPOINTING!",
+    "yes": {
+      "science": 0.03,
+      "languages": 0.07
+    },
+    "raw": {
+      "science": 0.025562535971403122,
+      "languages": 0.06909439712762833
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9744375348091125,
+        0.025562535971403122
+      ],
+      "languages": [
+        0.9309055805206299,
+        0.06909439712762833
+      ]
+    }
+  },
+  {
+    "id": "ref058",
+    "title": "Eating at Bridges. One of NYC’s Newest Michelin Starred Restaurants",
+    "yes": {
+      "science": 0.08,
+      "languages": 0.07
+    },
+    "raw": {
+      "science": 0.0775078609585762,
+      "languages": 0.06920036673545837
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9224920868873596,
+        0.0775078609585762
+      ],
+      "languages": [
+        0.9307996034622192,
+        0.06920036673545837
+      ]
+    }
+  },
+  {
+    "id": "ref059",
+    "title": "After 11 years away, he returned home and restored his grandfather’s forgotten house to get married",
+    "yes": {
+      "science": 0.21,
+      "languages": 0.17
+    },
+    "raw": {
+      "science": 0.21203583478927612,
+      "languages": 0.17068162560462952
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7879641652107239,
+        0.21203583478927612
+      ],
+      "languages": [
+        0.8293183445930481,
+        0.17068162560462952
+      ]
+    }
+  },
+  {
+    "id": "ref060",
+    "title": "Rare 4 Level Texas Estate Home With A Spacious Finished Basement on 2 ACRES & A 9 Car Garage | $7M",
+    "yes": {
+      "science": 0.29,
+      "languages": 0.16
+    },
+    "raw": {
+      "science": 0.2941146790981293,
+      "languages": 0.16480380296707153
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7058853507041931,
+        0.2941146790981293
+      ],
+      "languages": [
+        0.8351961970329285,
+        0.16480380296707153
+      ]
+    }
+  },
+  {
+    "id": "ref061",
+    "title": "This $2.7M Hill Country Resort Style Home on 2 Acres Feels Like A 5 Star Vacation!!",
+    "yes": {
+      "science": 0.13,
+      "languages": 0.14
+    },
+    "raw": {
+      "science": 0.1346995234489441,
+      "languages": 0.14495806396007538
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8653004765510559,
+        0.1346995234489441
+      ],
+      "languages": [
+        0.8550419807434082,
+        0.14495806396007538
+      ]
+    }
+  },
+  {
+    "id": "ref062",
+    "title": "iPhone 17 Pro (silver) aesthetic unboxing ✨ accessories + customization, camera test, iPhone setup",
+    "yes": {
+      "science": 0.26,
+      "languages": 0.18
+    },
+    "raw": {
+      "science": 0.26295822858810425,
+      "languages": 0.17677073180675507
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7370417714118958,
+        0.26295822858810425
+      ],
+      "languages": [
+        0.8232293128967285,
+        0.17677073180675507
+      ]
+    }
+  },
+  {
+    "id": "ref063",
+    "title": "How to Build a PC, the last guide you’ll ever need! (2024 Update)",
+    "yes": {
+      "science": 0.4,
+      "languages": 0.1
+    },
+    "raw": {
+      "science": 0.40213197469711304,
+      "languages": 0.09713924676179886
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.5978680849075317,
+        0.40213197469711304
+      ],
+      "languages": [
+        0.902860701084137,
+        0.09713924676179886
+      ]
+    }
+  },
+  {
+    "id": "ref064",
+    "title": "The Easiest PC Building Guide Ever",
+    "yes": {
+      "science": 0.25,
+      "languages": 0.16
+    },
+    "raw": {
+      "science": 0.24545179307460785,
+      "languages": 0.16405177116394043
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.754548192024231,
+        0.24545179307460785
+      ],
+      "languages": [
+        0.8359481692314148,
+        0.16405177116394043
+      ]
+    }
+  },
+  {
+    "id": "ref065",
+    "title": "The Best Way to Learn Linux",
+    "yes": {
+      "science": 0.46,
+      "languages": 0.33
+    },
+    "raw": {
+      "science": 0.45621657371520996,
+      "languages": 0.3309343755245209
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.54378342628479,
+        0.45621657371520996
+      ],
+      "languages": [
+        0.6690655946731567,
+        0.3309343755245209
+      ]
+    }
+  },
+  {
+    "id": "ref066",
+    "title": "Excel Tutorial for Beginners",
+    "yes": {
+      "science": 0.21,
+      "languages": 0.19
+    },
+    "raw": {
+      "science": 0.2075527310371399,
+      "languages": 0.1941397786140442
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7924472689628601,
+        0.2075527310371399
+      ],
+      "languages": [
+        0.8058602809906006,
+        0.1941397786140442
+      ]
+    }
+  },
+  {
+    "id": "ref067",
+    "title": "Inside Excel: Beginner to Advanced in One 5-Hour Course",
+    "yes": {
+      "science": 0.18,
+      "languages": 0.2
+    },
+    "raw": {
+      "science": 0.1769607663154602,
+      "languages": 0.19542083144187927
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.823039174079895,
+        0.1769607663154602
+      ],
+      "languages": [
+        0.8045791387557983,
+        0.19542083144187927
+      ]
+    }
+  },
+  {
+    "id": "ref068",
+    "title": "Comprehensible Japanese - Let's learn Japanese in the park!! 【Beginner】",
+    "yes": {
+      "science": 0.12,
+      "languages": 0.51
+    },
+    "raw": {
+      "science": 0.1155947670340538,
+      "languages": 0.5063408017158508
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8844051957130432,
+        0.1155947670340538
+      ],
+      "languages": [
+        0.4936591684818268,
+        0.5063408017158508
+      ]
+    }
+  },
+  {
+    "id": "ref069",
+    "title": "Learn Spanish in 35 minutes: The 100+ everyday Spanish sentences you need to know!",
+    "yes": {
+      "science": 0.1,
+      "languages": 0.57
+    },
+    "raw": {
+      "science": 0.1024903655052185,
+      "languages": 0.5715937614440918
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8975096344947815,
+        0.1024903655052185
+      ],
+      "languages": [
+        0.4284062683582306,
+        0.5715937614440918
+      ]
+    }
+  },
+  {
+    "id": "ref070",
+    "title": "The Easiest Way To Actually SPEAK Spanish - Lesson 1",
+    "yes": {
+      "science": 0.1,
+      "languages": 0.62
+    },
+    "raw": {
+      "science": 0.0987514778971672,
+      "languages": 0.6176884174346924
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.901248574256897,
+        0.0987514778971672
+      ],
+      "languages": [
+        0.38231152296066284,
+        0.6176884174346924
+      ]
+    }
+  },
+  {
+    "id": "ref071",
+    "title": "The ENTIRE History of China | Ancient to Modern (4K Documentary)",
+    "yes": {
+      "science": 0.29,
+      "languages": 0.2
+    },
+    "raw": {
+      "science": 0.29094094038009644,
+      "languages": 0.19746491312980652
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7090591192245483,
+        0.29094094038009644
+      ],
+      "languages": [
+        0.8025351166725159,
+        0.19746491312980652
+      ]
+    }
+  },
+  {
+    "id": "ref072",
+    "title": "Hell On Earth: The Complete, Uncensored History Of World War II",
+    "yes": {
+      "science": 0.16,
+      "languages": 0.17
+    },
+    "raw": {
+      "science": 0.1560111790895462,
+      "languages": 0.17222686111927032
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8439888954162598,
+        0.1560111790895462
+      ],
+      "languages": [
+        0.8277730941772461,
+        0.17222686111927032
+      ]
+    }
+  },
+  {
+    "id": "ref073",
+    "title": "World War Two Documentary   132 Minutes",
+    "yes": {
+      "science": 0.15,
+      "languages": 0.12
+    },
+    "raw": {
+      "science": 0.1495719701051712,
+      "languages": 0.120464988052845
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.85042804479599,
+        0.1495719701051712
+      ],
+      "languages": [
+        0.8795349597930908,
+        0.120464988052845
+      ]
+    }
+  },
+  {
+    "id": "ref074",
+    "title": "बकलोल नेता 😂Amitabh Agnihotri Debate 😅 Samjwadi akhilesh 😛 Cockroach party Rahul Gandhi 🌞 Dipke",
+    "yes": {
+      "science": 0.16,
+      "languages": 0.17
+    },
+    "raw": {
+      "science": 0.16223275661468506,
+      "languages": 0.17112739384174347
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8377672433853149,
+        0.16223275661468506
+      ],
+      "languages": [
+        0.8288726210594177,
+        0.17112739384174347
+      ]
+    }
+  },
+  {
+    "id": "ref075",
+    "title": "Climate Change and Global Warming: Explained in Simple Words for Beginners",
+    "yes": {
+      "science": 0.55,
+      "languages": 0.2
+    },
+    "raw": {
+      "science": 0.5521758198738098,
+      "languages": 0.20021629333496094
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.4478241801261902,
+        0.5521758198738098
+      ],
+      "languages": [
+        0.7997837066650391,
+        0.20021629333496094
+      ]
+    }
+  },
+  {
+    "id": "ref076",
+    "title": "What is Climate Change? 🌍 Explained for Everyone! | FuseSchool",
+    "yes": {
+      "science": 0.49,
+      "languages": 0.23
+    },
+    "raw": {
+      "science": 0.493169903755188,
+      "languages": 0.22811764478683472
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.506830096244812,
+        0.493169903755188
+      ],
+      "languages": [
+        0.7718824148178101,
+        0.22811764478683472
+      ]
+    }
+  },
+  {
+    "id": "ref077",
+    "title": "SHARIA LAW IS COMING | STAND UP COMEDY",
+    "yes": {
+      "science": 0.2,
+      "languages": 0.16
+    },
+    "raw": {
+      "science": 0.20447032153606415,
+      "languages": 0.15861694514751434
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7955297231674194,
+        0.20447032153606415
+      ],
+      "languages": [
+        0.8413830399513245,
+        0.15861694514751434
+      ]
+    }
+  },
+  {
+    "id": "ref078",
+    "title": "Family Pack - Official Teaser | Sree Vishnu, Sakkshi Mhadolkar | Ram Abbaraju | Mythri Movie Makers",
+    "yes": {
+      "science": 0.19,
+      "languages": 0.18
+    },
+    "raw": {
+      "science": 0.18568693101406097,
+      "languages": 0.1841398924589157
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8143131136894226,
+        0.18568693101406097
+      ],
+      "languages": [
+        0.8158600926399231,
+        0.1841398924589157
+      ]
+    }
+  },
+  {
+    "id": "ref079",
+    "title": "AVENGERS 5: DOOMSDAY Official Final Trailer (2026) Marvel",
+    "yes": {
+      "science": 0.13,
+      "languages": 0.04
+    },
+    "raw": {
+      "science": 0.12587828934192657,
+      "languages": 0.039526380598545074
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8741217255592346,
+        0.12587828934192657
+      ],
+      "languages": [
+        0.9604736566543579,
+        0.039526380598545074
+      ]
+    }
+  },
+  {
+    "id": "ref080",
+    "title": "Why PARASITE Is Impossible To Replicate",
+    "yes": {
+      "science": 0.18,
+      "languages": 0.19
+    },
+    "raw": {
+      "science": 0.17610903084278107,
+      "languages": 0.18519926071166992
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8238909244537354,
+        0.17610903084278107
+      ],
+      "languages": [
+        0.8148007392883301,
+        0.18519926071166992
+      ]
+    }
+  },
+  {
+    "id": "ref081",
+    "title": "The Most Over-Advertised Anime",
+    "yes": {
+      "science": 0.11,
+      "languages": 0.15
+    },
+    "raw": {
+      "science": 0.10575521737337112,
+      "languages": 0.1525253802537918
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8942447900772095,
+        0.10575521737337112
+      ],
+      "languages": [
+        0.8474746346473694,
+        0.1525253802537918
+      ]
+    }
+  },
+  {
+    "id": "ref082",
+    "title": "Please NEVER Write Romance Anime Like This",
+    "yes": {
+      "science": 0.01,
+      "languages": 0.12
+    },
+    "raw": {
+      "science": 0.01314826961606741,
+      "languages": 0.12397351115942001
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9868517518043518,
+        0.01314826961606741
+      ],
+      "languages": [
+        0.8760265111923218,
+        0.12397351115942001
+      ]
+    }
+  },
+  {
+    "id": "ref083",
+    "title": "Why Scott Hawkin's Blacktail Might Be the Best Book of the Year",
+    "yes": {
+      "science": 0.16,
+      "languages": 0.14
+    },
+    "raw": {
+      "science": 0.1578083634376526,
+      "languages": 0.14136913418769836
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8421916961669922,
+        0.1578083634376526
+      ],
+      "languages": [
+        0.8586308360099792,
+        0.14136913418769836
+      ]
+    }
+  },
+  {
+    "id": "ref084",
+    "title": "IT'S TIME TO REMEMBER WHO YOU AND BECOME THAT GUY - Motivational Speech",
+    "yes": {
+      "science": 0.16,
+      "languages": 0.15
+    },
+    "raw": {
+      "science": 0.16281171143054962,
+      "languages": 0.14752106368541718
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8371882438659668,
+        0.16281171143054962
+      ],
+      "languages": [
+        0.8524789810180664,
+        0.14752106368541718
+      ]
+    }
+  },
+  {
+    "id": "ref085",
+    "title": "THE COST OF GREATNESS - The Most Powerful Motivational Speeches Compilation",
+    "yes": {
+      "science": 0.24,
+      "languages": 0.27
+    },
+    "raw": {
+      "science": 0.23635093867778778,
+      "languages": 0.2654818296432495
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7636489868164062,
+        0.23635093867778778
+      ],
+      "languages": [
+        0.7345182299613953,
+        0.2654818296432495
+      ]
+    }
+  },
+  {
+    "id": "ref086",
+    "title": "Meditation for Inner Peace 7 | Relaxing Music for Meditation, Yoga, Studying | Fall Asleep Fast",
+    "yes": {
+      "science": 0.29,
+      "languages": 0.35
+    },
+    "raw": {
+      "science": 0.28606659173965454,
+      "languages": 0.3504960536956787
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7139334082603455,
+        0.28606659173965454
+      ],
+      "languages": [
+        0.6495038866996765,
+        0.3504960536956787
+      ]
+    }
+  },
+  {
+    "id": "ref087",
+    "title": "lofi hip hop radio 📚 beats to relax/study to",
+    "yes": {
+      "science": 0.24,
+      "languages": 0.28
+    },
+    "raw": {
+      "science": 0.23986588418483734,
+      "languages": 0.2780495584011078
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7601341605186462,
+        0.23986588418483734
+      ],
+      "languages": [
+        0.7219504714012146,
+        0.2780495584011078
+      ]
+    }
+  },
+  {
+    "id": "ref088",
+    "title": "Chill Lofi Mix [chill lo-fi hip hop beats]",
+    "yes": {
+      "science": 0.17,
+      "languages": 0.32
+    },
+    "raw": {
+      "science": 0.17166687548160553,
+      "languages": 0.31977128982543945
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8283330798149109,
+        0.17166687548160553
+      ],
+      "languages": [
+        0.6802287101745605,
+        0.31977128982543945
+      ]
+    }
+  },
+  {
+    "id": "ref089",
+    "title": "Making Porcelain Wavy Mug - Throwing on Potter's Wheel",
+    "yes": {
+      "science": 0.42,
+      "languages": 0.08
+    },
+    "raw": {
+      "science": 0.42212942242622375,
+      "languages": 0.08393580466508865
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.5778706073760986,
+        0.42212942242622375
+      ],
+      "languages": [
+        0.9160642027854919,
+        0.08393580466508865
+      ]
+    }
+  },
+  {
+    "id": "ref090",
+    "title": "Beginner Knitting 101 Guide !! (everything you need to start knitting)",
+    "yes": {
+      "science": 0.09,
+      "languages": 0.19
+    },
+    "raw": {
+      "science": 0.09240458160638809,
+      "languages": 0.18914149701595306
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9075954556465149,
+        0.09240458160638809
+      ],
+      "languages": [
+        0.810858428478241,
+        0.18914149701595306
+      ]
+    }
+  },
+  {
+    "id": "ref091",
+    "title": "Your Everyday Sweater Can Look THIS Chic! 🤗 (Beginner-Friendly Tutorial)",
+    "yes": {
+      "science": 0.05,
+      "languages": 0.38
+    },
+    "raw": {
+      "science": 0.054665371775627136,
+      "languages": 0.378833532333374
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.9453346133232117,
+        0.054665371775627136
+      ],
+      "languages": [
+        0.6211664080619812,
+        0.378833532333374
+      ]
+    }
+  },
+  {
+    "id": "ref092",
+    "title": "How does a 3D Printer work? (A1 by Bambu Lab)",
+    "yes": {
+      "science": 0.55,
+      "languages": 0.21
+    },
+    "raw": {
+      "science": 0.5483776926994324,
+      "languages": 0.212378591299057
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.45162227749824524,
+        0.5483776926994324
+      ],
+      "languages": [
+        0.7876214385032654,
+        0.212378591299057
+      ]
+    }
+  },
+  {
+    "id": "ref093",
+    "title": "Madeira 4K - Portugal's Paradise | Cinematic Drone Footage",
+    "yes": {
+      "science": 0.49,
+      "languages": 0.17
+    },
+    "raw": {
+      "science": 0.48851364850997925,
+      "languages": 0.173666849732399
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.5114864110946655,
+        0.48851364850997925
+      ],
+      "languages": [
+        0.8263331651687622,
+        0.173666849732399
+      ]
+    }
+  },
+  {
+    "id": "ref094",
+    "title": "LEAKED😳: A Drone Just Captured What Pochettino Is Doing in FIRST TRAINING ahead of Liverpool",
+    "yes": {
+      "science": 0.18,
+      "languages": 0.12
+    },
+    "raw": {
+      "science": 0.17508986592292786,
+      "languages": 0.12411155551671982
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8249101042747498,
+        0.17508986592292786
+      ],
+      "languages": [
+        0.875888466835022,
+        0.12411155551671982
+      ]
+    }
+  },
+  {
+    "id": "ref095",
+    "title": "32 BIG PLANE TAKEOFFS and LANDINGS from UP CLOSE | Sydney Airport Plane Spotting 2023 [SYD/YSSY]",
+    "yes": {
+      "science": 0.24,
+      "languages": 0.08
+    },
+    "raw": {
+      "science": 0.2397097945213318,
+      "languages": 0.07805170118808746
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7602902054786682,
+        0.2397097945213318
+      ],
+      "languages": [
+        0.921948254108429,
+        0.07805170118808746
+      ]
+    }
+  },
+  {
+    "id": "ref096",
+    "title": "Riverside Train Ride in Gifu, Japan / 8K 60fps HDR / Calm Piano + Natural Ambience",
+    "yes": {
+      "science": 0.36,
+      "languages": 0.25
+    },
+    "raw": {
+      "science": 0.35866260528564453,
+      "languages": 0.25013887882232666
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.6413373351097107,
+        0.35866260528564453
+      ],
+      "languages": [
+        0.7498611211776733,
+        0.25013887882232666
+      ]
+    }
+  },
+  {
+    "id": "ref097",
+    "title": "Switzerland’s Most Beautiful Train Ride – Grindelwald to Lauterbrunnen",
+    "yes": {
+      "science": 0.15,
+      "languages": 0.25
+    },
+    "raw": {
+      "science": 0.1450008749961853,
+      "languages": 0.24680151045322418
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.8549991846084595,
+        0.1450008749961853
+      ],
+      "languages": [
+        0.753198504447937,
+        0.24680151045322418
+      ]
+    }
+  },
+  {
+    "id": "ref098",
+    "title": "This Engine Is So Big Richard Hammond Can Walk Inside It | Richard Hammond's Big",
+    "yes": {
+      "science": 0.54,
+      "languages": 0.06
+    },
+    "raw": {
+      "science": 0.5365628004074097,
+      "languages": 0.057529203593730927
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.46343719959259033,
+        0.5365628004074097
+      ],
+      "languages": [
+        0.9424707293510437,
+        0.057529203593730927
+      ]
+    }
+  },
+  {
+    "id": "ref099",
+    "title": "BEST OF CAR CRASHES 2026 (so far)",
+    "yes": {
+      "science": 0.53,
+      "languages": 0.25
+    },
+    "raw": {
+      "science": 0.5253010988235474,
+      "languages": 0.2510174512863159
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.474698930978775,
+        0.5253010988235474
+      ],
+      "languages": [
+        0.7489825487136841,
+        0.2510174512863159
+      ]
+    }
+  },
+  {
+    "id": "ref100",
+    "title": "Expensive Supercar Fails Caught on Camera",
+    "yes": {
+      "science": 0.59,
+      "languages": 0.12
+    },
+    "raw": {
+      "science": 0.5884997248649597,
+      "languages": 0.11972323805093765
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.4115002751350403,
+        0.5884997248649597
+      ],
+      "languages": [
+        0.8802767395973206,
+        0.11972323805093765
+      ]
+    }
+  },
+  {
+    "id": "ref101",
+    "title": "These Magic Tricks Look Impossible Until You See How",
+    "yes": {
+      "science": 0.3,
+      "languages": 0.15
+    },
+    "raw": {
+      "science": 0.2962699830532074,
+      "languages": 0.14621612429618835
+    },
+    "format": "",
+    "choices": {},
+    "probs": {
+      "science": [
+        0.7037299871444702,
+        0.2962699830532074
+      ],
+      "languages": [
+        0.8537838459014893,
+        0.14621612429618835
+      ]
+    }
+  }
+]

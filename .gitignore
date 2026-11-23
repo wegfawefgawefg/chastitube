@@ -1,0 +1,5 @@
+bin/
+__pycache__/
+target/
+art/tmp/
+art/codex.log

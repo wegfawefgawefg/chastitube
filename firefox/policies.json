@@ -1,0 +1,21 @@
+{
+  "policies": {
+    "WebsiteFilter": {
+      "Block": [
+        "*://youtube.com/*",
+        "*://www.youtube.com/*",
+        "*://m.youtube.com/*",
+        "*://youtu.be/*"
+      ],
+      "Exceptions": [
+        "*://www.youtube.com/embed/*"
+      ]
+    },
+    "DontCheckDefaultBrowser": true,
+    "Permissions": {
+      "Autoplay": {
+        "Allow": ["http://localhost:8790"]
+      }
+    }
+  }
+}

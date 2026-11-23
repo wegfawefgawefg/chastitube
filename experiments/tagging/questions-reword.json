@@ -1,0 +1,2 @@
+[{"id": "science", "type": "noul", "instructions": "Is this video about science (physics, chemistry, astronomy, space, experiments)?"},
+ {"id": "languages", "type": "noul", "instructions": "Is this video about learning a foreign language (speaking Spanish, Japanese, English and so on)?"}]
