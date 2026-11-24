@@ -236,11 +236,14 @@ fn channel_route(req: Request, key: &str, q: &[(String, String)]) {
         Err(e) => return html(req, 200, pages::message_page(&format!("Couldn't open that channel: {e}"))),
     };
     let sort = qget(q, "sort").filter(|s| channel::SORTS.contains(s)).unwrap_or("latest");
+    // the asked-for kind if the channel has it, else its first (normally "videos")
+    let kind = qget(q, "kind").filter(|k| ch.kinds.iter().any(|(c, _)| c == k))
+        .or(ch.kinds.first().map(|(k, _)| k.as_str())).unwrap_or("videos").to_string();
     let count = qget(q, "n").and_then(|n| n.parse::<usize>().ok()).unwrap_or(30).clamp(30, 600);
-    match channel::videos(&ch, sort, count) {
+    match channel::videos(&ch, &kind, sort, count) {
         Ok((videos, more)) => {
             yt::remember(videos.iter());
-            html(req, 200, channel::channel_page(&ch, sort, &videos, more, count, &store::positions()))
+            html(req, 200, channel::channel_page(&ch, &kind, sort, &videos, more, count, &store::positions()))
         }
         Err(e) => html(req, 200, pages::message_page(&format!("Couldn't list that channel's videos: {e}"))),
     }
