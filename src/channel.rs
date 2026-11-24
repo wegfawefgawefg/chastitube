@@ -10,7 +10,7 @@ use std::time::{Duration, Instant};
 use crate::pages::{dl_button, duration, join, page, progress, row, thumb};
 use crate::store::Pos;
 use crate::util::{esc, lock, urlencode};
-use crate::youtube::{found, lockup_badge, next_token, playlist_hit, post, s, seconds, PlaylistHit, Video};
+use crate::youtube::{found, lockup_badge, next_token, playlist_hit, post, s, seconds, short_lockup, PlaylistHit, Video};
 
 const VIDEOS_TAB: &str = "EgZ2aWRlb3PyBgQKAjoA";
 const PLAYLISTS_TAB: &str = "EglwbGF5bGlzdHPyBgQKAkIA";
@@ -103,14 +103,7 @@ fn uploads(d: &Value, ch_title: &str, ch_id: &str) -> Vec<Video> {
             ..Default::default()
         });
     }
-    for sh in found(d, "shortsLockupViewModel") {
-        out.push(Video {
-            id: found(&sh["onTap"], "videoId").first().map(|v| s(v)).unwrap_or_default(),
-            title: s(&sh["overlayMetadata"]["primaryText"]["content"]),
-            info: s(&sh["overlayMetadata"]["secondaryText"]["content"]),
-            ..Default::default()
-        });
-    }
+    out.extend(found(d, "shortsLockupViewModel").into_iter().filter_map(short_lockup));
     out.retain(|v| crate::util::valid_id(&v.id));
     for v in out.iter_mut() {
         if v.title.is_empty() {

@@ -178,7 +178,7 @@ fn titles() -> std::collections::HashMap<String, (String, String)> {
 
 fn search(req: Request, q: &[(String, String)]) {
     let Some(raw) = qget(q, "q").map(str::trim).filter(|s| !s.is_empty()) else {
-        return html(req, 200, pages::search_page("", None, None, 20, &Default::default(), &[], None));
+        return html(req, 200, pages::search_page("", None, None, 20, &Default::default(), &[], None, false, None));
     };
     let mut query = raw.to_string();
     match classify(raw) {
@@ -204,20 +204,26 @@ fn search(req: Request, q: &[(String, String)]) {
         store::add_search(&query);
     }
     // videos and playlists are two separate searches: run them side by side
-    let (videos, lists) = std::thread::scope(|s| {
+    // Shorts only when asked for, for this one search
+    let want_shorts = qget(q, "shorts") == Some("1");
+    let (videos, lists, shorts) = std::thread::scope(|s| {
         let lists = s.spawn(|| yt::search_playlists(&query, count / 2));
+        let shorts = s.spawn(|| if want_shorts { crate::youtube::search_shorts(&query).ok() } else { None });
         let videos = yt::search(&query, count);
-        (videos, lists.join().unwrap_or_else(|_| Err("crashed".into())))
+        (videos, lists.join().unwrap_or_else(|_| Err("crashed".into())), shorts.join().ok().flatten())
     });
+    if let Some(sh) = &shorts {
+        yt::remember(sh.iter());
+    }
     let positions = store::positions();
     let page = match videos {
-        Err(e) => pages::search_page(&query, None, Some(&format!("Search failed: {e}")), count, &positions, &[], None),
+        Err(e) => pages::search_page(&query, None, Some(&format!("Search failed: {e}")), count, &positions, &[], None, false, None),
         Ok(v) => {
             let (pls, pl_err) = match lists {
                 Ok(p) => (p, None),
                 Err(e) => (Vec::new(), Some(format!("Playlist search failed: {e}"))),
             };
-            pages::search_page(&query, Some(&v), None, count, &positions, &pls, pl_err.as_deref())
+            pages::search_page(&query, Some(&v), None, count, &positions, &pls, pl_err.as_deref(), want_shorts, shorts.as_deref())
         }
     };
     html(req, 200, page);

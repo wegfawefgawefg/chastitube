@@ -182,7 +182,8 @@ pub(crate) fn row(thumb: &str, href: &str, title: &str, meta: &str, extra: &str)
 }
 
 pub fn search_page(q: &str, results: Option<&[Video]>, error: Option<&str>, count: usize,
-                   positions: &HashMap<String, Pos>, playlists: &[PlaylistHit], pl_error: Option<&str>) -> String {
+                   positions: &HashMap<String, Pos>, playlists: &[PlaylistHit], pl_error: Option<&str>,
+                   shorts_on: bool, shorts: Option<&[Video]>) -> String {
     let mut parts = vec![search_box(q, true)];
     if let Some(e) = error {
         parts.push(format!(r#"<p class="err">{}</p>"#, esc(e)));
@@ -191,7 +192,14 @@ pub fn search_page(q: &str, results: Option<&[Video]>, error: Option<&str>, coun
         let title = if q.is_empty() { "chastitube".to_string() } else { format!("{q} - chastitube") };
         return page(&title, &parts.concat(), "", "");
     };
-    let mut left = vec![r#"<h2 class="col">Videos</h2>"#.to_string()];
+    // Shorts stay out unless asked for, for this one search (n= keeps it from counting as a new search)
+    let n = count.to_string();
+    let toggle = if shorts_on {
+        format!(r#"<a href="/?{}">hide shorts</a>"#, esc(&urlencode(&[("q", q), ("n", &n)])))
+    } else {
+        format!(r#"<a href="/?{}">show shorts</a>"#, esc(&urlencode(&[("q", q), ("n", &n), ("shorts", "1")])))
+    };
+    let mut left = vec![format!(r#"<h2 class="col">Videos · {toggle}</h2>"#)];
     for r in results {
         let href = format!("/v/{}?{}", r.id, urlencode(&[("from", "search"), ("q", q)]));
         let meta = join(&[channel_link(&r.channel, &r.channel_id), if r.live { "live".into() } else { duration(r.duration) },
@@ -201,8 +209,24 @@ pub fn search_page(q: &str, results: Option<&[Video]>, error: Option<&str>, coun
     if results.is_empty() {
         left.push(r#"<p class="note">Nothing found.</p>"#.into());
     } else if count < 60 {
-        let more = urlencode(&[("q", q), ("n", &(count + 20).to_string())]);
-        left.push(format!(r#"<p><a href="/?{}">more results</a></p>"#, esc(&more)));
+        let mut more = vec![("q", q.to_string()), ("n", (count + 20).to_string())];
+        if shorts_on {
+            more.push(("shorts", "1".to_string()));
+        }
+        let more: Vec<(&str, &str)> = more.iter().map(|(k, v)| (*k, v.as_str())).collect();
+        left.push(format!(r#"<p><a href="/?{}">more results</a></p>"#, esc(&urlencode(&more))));
+    }
+    if shorts_on {
+        left.push(r#"<h2 class="col">Shorts</h2>"#.to_string());
+        match shorts {
+            None => left.push(r#"<p class="err">Couldn't get the Shorts.</p>"#.into()),
+            Some([]) => left.push(r#"<p class="note">No Shorts for this search.</p>"#.into()),
+            Some(list) => for r in list {
+                let href = format!("/v/{}?{}", r.id, urlencode(&[("from", "search"), ("q", q)]));
+                let meta = join(&["short".into(), esc(&r.info), progress(positions.get(&r.id))]);
+                left.push(row(&thumb(&r.id, &href, None), &href, &r.title, &meta, &dl_button(&r.id, "")));
+            },
+        }
     }
     let mut right = vec![r#"<h2 class="col">Playlists</h2>"#.to_string()];
     if let Some(e) = pl_error {

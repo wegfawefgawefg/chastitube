@@ -7,7 +7,9 @@ It runs on your own computer, at http://chastitube in Firefox. Linux only for no
 
 ![Search: videos on the left, playlists on the right](docs/search.png)
 
-- Search shows videos and playlists (no Shorts). You can paste a link too.
+- Search shows videos and playlists. Shorts stay out unless you click "show
+  shorts" on a search, which adds them for that one search. You can paste a
+  link too.
 - Channels: click a channel's name (or open a channel link) to see its
   videos, Shorts and live streams, newest, most popular or oldest first, and
   its playlists. Only what the channel made: no home tab, featured picks or

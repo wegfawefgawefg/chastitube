@@ -197,6 +197,30 @@ pub fn playlists(query: &str, count: usize) -> Result<Vec<PlaylistHit>, String> 
     Ok(out)
 }
 
+/// A Short from a "shorts lockup" (a search's Shorts shelf, a channel's Shorts tab).
+pub(crate) fn short_lockup(sh: &Value) -> Option<Video> {
+    let id = found(&sh["onTap"], "videoId").first().map(|v| s(v)).filter(|id| valid_id(id))?;
+    let title = s(&sh["overlayMetadata"]["primaryText"]["content"]);
+    Some(Video {
+        title: if title.is_empty() { id.clone() } else { title },
+        info: s(&sh["overlayMetadata"]["secondaryText"]["content"]),
+        id,
+        ..Default::default()
+    })
+}
+
+/// The Shorts in a search's first results page (left out of normal results).
+pub fn search_shorts(query: &str) -> Result<Vec<Video>, String> {
+    let d = post("search", json!({"query": query}))?;
+    let mut out: Vec<Video> = Vec::new();
+    for v in found(&d, "shortsLockupViewModel").into_iter().filter_map(short_lockup) {
+        if !out.iter().any(|o| o.id == v.id) {
+            out.push(v);
+        }
+    }
+    Ok(out)
+}
+
 /// A playlist from a "lockup" (search results, a channel's playlists tab).
 pub(crate) fn playlist_hit(lk: &Value) -> Option<PlaylistHit> {
     if lk["contentType"] != "LOCKUP_CONTENT_TYPE_PLAYLIST" {
