@@ -6,9 +6,9 @@ use tiny_http::{Header, Request, Response, StatusCode};
 
 use crate::links::{classify, parse_time, Link};
 use crate::util::{app_dir, base, esc, own_origins, port, qget, save_dir, urlencode, valid_id, valid_list, NAME_IP};
-use crate::{pages, player, store, tabs, tags, yt};
+use crate::{channel, pages, player, store, tabs, tags, yt};
 
-const NOT_OPENED: &str = "chastitube only opens videos and playlists. Channels, Mixes and the home page stay shut.";
+const NOT_OPENED: &str = "chastitube opens videos, playlists and channels. Mixes, Shorts and the home page stay shut.";
 
 fn header(k: &str, v: &str) -> Header {
     Header::from_bytes(k.as_bytes(), v.as_bytes()).expect("header")
@@ -124,6 +124,10 @@ fn handle(req: Request) {
         [] => search(req, &q),
         ["p", list] if valid_list(list) => open_playlist(req, list, &q),
         ["v", vid] if valid_id(vid) => video(req, vid, &q),
+        ["c", ..] if parts.len() >= 2 => {
+            let key = percent_encoding::percent_decode_str(&parts[1..].join("/")).decode_utf8_lossy().into_owned();
+            channel_route(req, &key, &q)
+        }
         ["file", ..] if parts.len() >= 2 => {
             let name = percent_encoding::percent_decode_str(&parts[1..].join("/")).decode_utf8_lossy().into_owned();
             match yt::saved_path(&name) {
@@ -191,6 +195,7 @@ fn search(req: Request, q: &[(String, String)]) {
         }
         Some(Link::Playlist(list)) => return redirect(req, &format!("/p/{list}?from=paste")),
         Some(Link::Search(s)) => query = s,
+        Some(Link::Channel(c)) => return redirect(req, &format!("/c/{}", crate::util::quote_path(&c))),
         Some(Link::YouTube) => return html(req, 200, pages::message_page(NOT_OPENED)),
         None => {}
     }
@@ -216,6 +221,29 @@ fn search(req: Request, q: &[(String, String)]) {
         }
     };
     html(req, 200, page);
+}
+
+/// /c/UC... shows the channel; /c/@handle (or c/name, user/name) finds its id first.
+fn channel_route(req: Request, key: &str, q: &[(String, String)]) {
+    if !channel::valid_channel_id(key) {
+        return match channel::resolve(key) {
+            Ok(id) => redirect(req, &format!("/c/{id}")),
+            Err(e) => html(req, 200, pages::message_page(&format!("Couldn't find that channel: {e}"))),
+        };
+    }
+    let ch = match channel::channel(key) {
+        Ok(ch) => ch,
+        Err(e) => return html(req, 200, pages::message_page(&format!("Couldn't open that channel: {e}"))),
+    };
+    let sort = qget(q, "sort").filter(|s| channel::SORTS.contains(s)).unwrap_or("latest");
+    let count = qget(q, "n").and_then(|n| n.parse::<usize>().ok()).unwrap_or(30).clamp(30, 600);
+    match channel::videos(&ch, sort, count) {
+        Ok((videos, more)) => {
+            yt::remember(videos.iter());
+            html(req, 200, channel::channel_page(&ch, sort, &videos, more, count, &store::positions()))
+        }
+        Err(e) => html(req, 200, pages::message_page(&format!("Couldn't list that channel's videos: {e}"))),
+    }
 }
 
 /// A playlist opens on its first video you haven't finished.
@@ -252,14 +280,15 @@ fn video(req: Request, vid: &str, q: &[(String, String)]) {
         resumed = store::resume_point(positions.get(vid));
         start = Some(resumed);
     }
-    let source = qget(q, "from").filter(|s| ["search", "link", "paste", "history", "saved", "playlist"].contains(s)).unwrap_or("direct");
+    let source = qget(q, "from").filter(|s| ["search", "link", "paste", "history", "saved", "playlist", "channel"].contains(s)).unwrap_or("direct");
     let detail = qget(q, "q").or(qget(q, "app")).or(qget(q, "pl")).unwrap_or("");
     store::add_history(vid, &title, &channel, source, &crate::util::truncate(detail, 200));
     let saved_name = yt::saved_file(vid);
     let saved = if pl.is_some() { yt::saved_ids() } else { Default::default() };
     let origin = page_origin(&req);
+    let channel_id = store::details(vid).map(|d| d.channel_id).unwrap_or_default();
     html(req, 200, player::video_page(&player::VideoPage {
-        vid, title: &title, channel: &channel, start: start.unwrap_or(0), origin: &origin, resumed,
+        vid, title: &title, channel: &channel, channel_id: &channel_id, start: start.unwrap_or(0), origin: &origin, resumed,
         saved_name: saved_name.as_deref(), pl: pl.as_deref(), positions: &positions, saved: &saved,
     }));
 }

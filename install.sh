@@ -27,15 +27,17 @@ if [ "$1" = "--tags-off" ]; then
     exit 0
 fi
 
-(cd "$DIR" && cargo build --release --quiet)
+# build output lives in ~/.cache, so this folder stays small
+BUILD="${XDG_CACHE_HOME:-$HOME/.cache}/chastitube"
+(cd "$DIR" && CARGO_TARGET_DIR="$BUILD/target" cargo build --release --quiet)
 mkdir -p "$DIR/bin" "$APPS" "$AUTO" "$HOME/Videos/chastitube"
 # copy then rename, so a running server's binary is never written over
-cp "$DIR/target/release/chastitube" "$BIN.new" && mv "$BIN.new" "$BIN"
+cp "$BUILD/target/release/chastitube" "$BIN.new" && mv "$BIN.new" "$BIN"
 
 # the tagger: built when asked for, and kept up to date once it's there
 if [ "$1" = "--tags" ] || [ -f "$DIR/bin/chastitube-tagger" ]; then
-    (cd "$DIR/tagger" && cargo build --release --quiet)
-    cp "$DIR/tagger/target/release/chastitube-tagger" "$DIR/bin/chastitube-tagger.new"
+    (cd "$DIR/tagger" && CARGO_TARGET_DIR="$BUILD/tagger-target" cargo build --release --quiet)
+    cp "$BUILD/tagger-target/release/chastitube-tagger" "$DIR/bin/chastitube-tagger.new"
     mv "$DIR/bin/chastitube-tagger.new" "$DIR/bin/chastitube-tagger"
 fi
 if [ "$1" = "--tags" ] && [ ! -f "$DATA/laya/encoder.onnx" ]; then

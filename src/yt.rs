@@ -121,7 +121,7 @@ pub fn search(query: &str, count: usize) -> Result<Vec<Video>, String> {
                                                 && !s(&e["url"]).contains("/shorts/"))
             .map(|e| Video { id: s(&e["id"]), title: s(&e["title"]), channel: channel_of(e),
                              duration: e["duration"].as_f64().map(|d| d as u64),
-                             live: e["live_status"] == "is_live" }).collect())
+                             live: e["live_status"] == "is_live", ..Default::default() }).collect())
     })?;
     remember(found.iter());
     Ok(found)
@@ -158,7 +158,7 @@ pub fn playlist(list_id: &str) -> Result<Arc<Playlist>, String> {
             .filter(|e| valid_id(e["id"].as_str().unwrap_or(""))
                     && !matches!(e["title"].as_str(), Some("[Private video]" | "[Deleted video]")))
             .map(|e| Video { id: s(&e["id"]), title: s(&e["title"]), channel: channel_of(e),
-                             duration: e["duration"].as_f64().map(|d| d as u64), live: false }).collect();
+                             duration: e["duration"].as_f64().map(|d| d as u64), ..Default::default() }).collect();
         Ok::<_, String>(Playlist { id: list_id.into(), title: s(&d["title"]), channel: channel_of(&d), videos })
     })?;
     remember(pl.videos.iter());
@@ -176,7 +176,7 @@ fn titles() -> &'static Mutex<HashMap<String, (String, String)>> {
 
 /// Titles seen in search results and playlists, so opening one of them
 /// doesn't have to ask YouTube for it again.
-fn remember<'a>(videos: impl Iterator<Item = &'a Video>) {
+pub fn remember<'a>(videos: impl Iterator<Item = &'a Video>) {
     let mut t = lock(titles());
     if t.len() > 20000 {
         t.clear();

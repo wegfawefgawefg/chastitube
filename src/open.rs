@@ -133,6 +133,7 @@ pub fn open_links(args: &[String]) {
             }
             Some(Link::Playlist(list)) => format!("/p/{list}?{}", urlencode(&[("from", "link"), ("app", &app)])),
             Some(Link::Search(q)) => format!("/?{}", urlencode(&[("q", &q)])),
+            Some(Link::Channel(c)) => format!("/c/{}", crate::util::quote_path(&c)),
             Some(Link::YouTube) => format!("/?{}", urlencode(&[("q", arg)])),
         };
         ensure_server();

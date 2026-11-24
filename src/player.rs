@@ -211,6 +211,8 @@ pub struct VideoPage<'a> {
     pub vid: &'a str,
     pub title: &'a str,
     pub channel: &'a str,
+    /// "UC..." if known: the channel name links to its page
+    pub channel_id: &'a str,
     pub start: u64,
     pub origin: &'a str,
     pub resumed: u64,
@@ -223,7 +225,7 @@ pub struct VideoPage<'a> {
 pub fn video_page(p: &VideoPage) -> String {
     let mut notes: Vec<String> = Vec::new();
     if !p.channel.is_empty() {
-        notes.push(esc(p.channel));
+        notes.push(crate::pages::channel_link(p.channel, p.channel_id));
     }
     if p.saved_name.is_some() {
         notes.push("your saved copy".into());

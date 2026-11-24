@@ -8,6 +8,9 @@ It runs on your own computer, at http://chastitube in Firefox. Linux only for no
 ![Search: videos on the left, playlists on the right](docs/search.png)
 
 - Search shows videos and playlists (no Shorts). You can paste a link too.
+- Channels: click a channel's name (or open a channel link) to see its
+  videos, newest, most popular or oldest first, and its playlists. Only what
+  the channel made: no home tab, featured picks or related channels.
 - Videos play in YouTube's embedded player. When a video ends, the player is
   removed, so YouTube can't suggest another one.
 - Playlists open beside the player, with Next and an autoplay option.
@@ -20,6 +23,8 @@ It runs on your own computer, at http://chastitube in Firefox. Linux only for no
   Every other link goes to Firefox.
 
 ![A playlist beside the player](docs/video.png)
+
+![A channel's most popular videos and its playlists](docs/channel.png)
 
 ## Install
 

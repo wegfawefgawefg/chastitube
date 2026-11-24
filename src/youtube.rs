@@ -1,9 +1,10 @@
 //! YouTube's own web API (the one its pages call): search, playlists and one
-//! video's details. One kept-alive connection pool, so after the first call
-//! there's no new TLS handshake per request.
+//! video's details (channel pages are in channel.rs). One kept-alive
+//! connection pool, so after the first call there's no new TLS handshake per request.
 //!
-//! Only search, playlist pages and a single video's details are fetched.
-//! Nothing here asks for recommendations, the home feed or related videos.
+//! Only search, playlist pages, a channel's own videos and playlists, and a
+//! single video's details are fetched. Nothing here asks for recommendations,
+//! the home feed or related videos.
 use serde_json::{json, Value};
 use std::sync::OnceLock;
 use std::time::Duration;
@@ -22,7 +23,7 @@ pub fn agent() -> &'static ureq::Agent {
     AGENT.get_or_init(|| ureq::AgentBuilder::new().timeout(Duration::from_secs(15)).max_idle_connections_per_host(4).build())
 }
 
-fn post(endpoint: &str, mut body: Value) -> Result<Value, String> {
+pub(crate) fn post(endpoint: &str, mut body: Value) -> Result<Value, String> {
     body["context"] = json!({"client": client()});
     let resp = agent().post(&format!("{API}{endpoint}?prettyPrint=false"))
         .set("Content-Type", "application/json")
@@ -45,13 +46,13 @@ pub fn find<'a>(v: &'a Value, key: &str, out: &mut Vec<&'a Value>) {
     }
 }
 
-fn found<'a>(v: &'a Value, key: &str) -> Vec<&'a Value> {
+pub(crate) fn found<'a>(v: &'a Value, key: &str) -> Vec<&'a Value> {
     let mut out = Vec::new();
     find(v, key, &mut out);
     out
 }
 
-fn text(t: &Value) -> String {
+pub(crate) fn text(t: &Value) -> String {
     if let Some(s) = t.get("simpleText").and_then(Value::as_str) {
         return s.to_string();
     }
@@ -60,7 +61,7 @@ fn text(t: &Value) -> String {
         .unwrap_or_default()
 }
 
-fn s(v: &Value) -> String {
+pub(crate) fn s(v: &Value) -> String {
     v.as_str().unwrap_or("").to_string()
 }
 
@@ -82,19 +83,23 @@ pub fn seconds(s: &str) -> Option<u64> {
 /// The token for the next page of results. In search responses it's the
 /// last continuationItemRenderer (earlier tokens belong to the filter chips);
 /// in playlists it's the first continuationItemViewModel.
-fn next_token(d: &Value) -> Option<String> {
+pub(crate) fn next_token(d: &Value) -> Option<String> {
     let token = |item: &&Value| found(item, "token").first().and_then(|t| t.as_str()).map(String::from);
     found(d, "continuationItemRenderer").last().and_then(token)
         .or_else(|| found(d, "continuationItemViewModel").first().and_then(token))
 }
 
-#[derive(Clone)]
+#[derive(Clone, Default)]
 pub struct Video {
     pub id: String,
     pub title: String,
     pub channel: String,
+    /// "UC..." when known, for linking to the channel's page
+    pub channel_id: String,
     pub duration: Option<u64>,
     pub live: bool,
+    /// "2.9M views · 2 days ago" on channel pages
+    pub info: String,
 }
 
 #[derive(Clone)]
@@ -150,12 +155,16 @@ pub fn videos(query: &str, count: usize) -> Result<Vec<Video>, String> {
                 channel = text(&v["longBylineText"]);
             }
             let title = text(&v["title"]);
+            let channel_id = found(&v["ownerText"], "browseId").first().map(|b| s(b))
+                .or_else(|| found(&v["longBylineText"], "browseId").first().map(|b| s(b))).unwrap_or_default();
             out.push(Video {
                 title: if title.is_empty() { id.clone() } else { title },
                 channel,
+                channel_id,
                 duration: seconds(&length),
                 live: badges.contains("LIVE") && length.is_empty(),
                 id,
+                ..Default::default()
             });
         }
     }
@@ -166,12 +175,12 @@ pub fn videos(query: &str, count: usize) -> Result<Vec<Video>, String> {
     Ok(out)
 }
 
-fn lockup_channel(lk: &Value) -> String {
+pub(crate) fn lockup_channel(lk: &Value) -> String {
     let parts = found(&lk["metadata"]["lockupMetadataViewModel"]["metadata"], "metadataParts");
     parts.first().and_then(|p| p.get(0)).map(|p| s(&p["text"]["content"])).unwrap_or_default()
 }
 
-fn lockup_badge(lk: &Value) -> String {
+pub(crate) fn lockup_badge(lk: &Value) -> String {
     found(&lk["contentImage"], "thumbnailBadgeViewModel").first().map(|b| s(&b["text"])).unwrap_or_default()
 }
 
@@ -179,29 +188,32 @@ pub fn playlists(query: &str, count: usize) -> Result<Vec<PlaylistHit>, String> 
     let pages = search_pages(query, Some(PLAYLISTS_FILTER), count)?;
     let mut out = Vec::new();
     for d in &pages {
-        for lk in found(d, "lockupViewModel") {
-            if lk["contentType"] != "LOCKUP_CONTENT_TYPE_PLAYLIST" {
-                continue;
-            }
-            let id = s(&lk["contentId"]);
-            let title = s(&lk["metadata"]["lockupMetadataViewModel"]["title"]["content"]);
-            let thumb = found(&lk["contentImage"], "sources").iter()
-                .find_map(|src| src.get(0).and_then(|x| x["url"].as_str()).map(String::from))
-                .unwrap_or_default();
-            out.push(PlaylistHit {
-                title: if title.is_empty() { id.clone() } else { title },
-                channel: lockup_channel(lk),
-                count: lockup_badge(lk),
-                thumb,
-                id,
-            });
-        }
+        out.extend(found(d, "lockupViewModel").into_iter().filter_map(playlist_hit));
     }
     if out.is_empty() {
         return Err("search API gave no playlists".into());
     }
     out.truncate(count);
     Ok(out)
+}
+
+/// A playlist from a "lockup" (search results, a channel's playlists tab).
+pub(crate) fn playlist_hit(lk: &Value) -> Option<PlaylistHit> {
+    if lk["contentType"] != "LOCKUP_CONTENT_TYPE_PLAYLIST" {
+        return None;
+    }
+    let id = s(&lk["contentId"]);
+    let title = s(&lk["metadata"]["lockupMetadataViewModel"]["title"]["content"]);
+    let thumb = found(&lk["contentImage"], "sources").iter()
+        .find_map(|src| src.get(0).and_then(|x| x["url"].as_str()).map(String::from))
+        .unwrap_or_default();
+    Some(PlaylistHit {
+        title: if title.is_empty() { id.clone() } else { title },
+        channel: lockup_channel(lk),
+        count: lockup_badge(lk),
+        thumb,
+        id,
+    })
 }
 
 /// A playlist's title, channel and videos in order (100 per page).
@@ -232,8 +244,8 @@ pub fn playlist(list_id: &str) -> Result<Playlist, String> {
                 title: if t.is_empty() { id.clone() } else { t },
                 channel: lockup_channel(lk),
                 duration: seconds(&lockup_badge(lk)),
-                live: false,
                 id,
+                ..Default::default()
             });
         }
         match next_token(&d) {

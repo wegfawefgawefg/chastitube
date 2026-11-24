@@ -1,4 +1,5 @@
 //! chastitube: YouTube search, videos and playlists, with no feed.
+mod channel;
 mod links;
 mod open;
 mod pages;

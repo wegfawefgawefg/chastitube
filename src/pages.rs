@@ -53,6 +53,12 @@ h2.day { font-size: 15px; font-weight: 600; color: #aaa; margin: 26px 0 4px; }
 .bars .val { color: #999; font-size: 14px; white-space: nowrap; }
 .totals { display: flex; gap: 40px; margin: 8px 0 10px; }
 .totals .big { font-size: 26px; color: #eee; }
+.chead { display: flex; gap: 18px; align-items: center; margin: 4px 0 22px; }
+.chead h1 { margin: 0 0 2px; }
+.chead .avatar { width: 84px; height: 84px; border-radius: 50%; flex: none; }
+.chead .note { font-size: 14px; max-width: 900px; }
+h2.col b { color: #ddd; }
+h2.col a { text-transform: none; }
 .tagbar { display: flex; flex-wrap: wrap; gap: 6px; margin: -8px 0 14px; }
 .chip { display: inline-flex; align-items: center; gap: 4px; padding: 1px 9px; border-radius: 11px;
         background: #23272e; color: #b9c7da; font-size: 13px; border: 1px solid #333a44; }
@@ -114,7 +120,7 @@ pub fn search_box(q: &str, autofocus: bool) -> String {
 <button class="big">Search</button></form>"#, esc(q), if autofocus { " autofocus" } else { "" })
 }
 
-fn join(parts: &[String]) -> String {
+pub(crate) fn join(parts: &[String]) -> String {
     parts.iter().filter(|p| !p.is_empty()).cloned().collect::<Vec<_>>().join(" · ")
 }
 
@@ -150,7 +156,7 @@ pub fn progress(p: Option<&Pos>) -> String {
     format!("stopped at {} of {}", duration(Some(p.pos as u64)), duration(Some(p.dur as u64)))
 }
 
-fn thumb(vid: &str, href: &str, src: Option<&str>) -> String {
+pub(crate) fn thumb(vid: &str, href: &str, src: Option<&str>) -> String {
     let src = src.map(String::from).unwrap_or_else(|| format!("https://i.ytimg.com/vi/{vid}/mqdefault.jpg"));
     format!(r#"<a class="thumb" href="{}"><img loading="lazy" alt="" src="{}"></a>"#, esc(href), esc(&src))
 }
@@ -160,7 +166,16 @@ pub fn dl_button(vid: &str, class: &str) -> String {
     format!(r#"<button{class} data-dl="{vid}" onclick="dl('{vid}', this)">Download</button>"#)
 }
 
-fn row(thumb: &str, href: &str, title: &str, meta: &str, extra: &str) -> String {
+/// A channel's name, linked to its page when we know its id.
+pub(crate) fn channel_link(name: &str, channel_id: &str) -> String {
+    if crate::channel::valid_channel_id(channel_id) {
+        format!(r#"<a href="/c/{channel_id}">{}</a>"#, esc(name))
+    } else {
+        esc(name)
+    }
+}
+
+pub(crate) fn row(thumb: &str, href: &str, title: &str, meta: &str, extra: &str) -> String {
     format!(r#"<div class="row">{thumb}<div class="text">
 <a class="title" href="{}">{}</a>
 <div class="meta">{meta}</div></div>{extra}</div>"#, esc(href), esc(title))
@@ -179,7 +194,7 @@ pub fn search_page(q: &str, results: Option<&[Video]>, error: Option<&str>, coun
     let mut left = vec![r#"<h2 class="col">Videos</h2>"#.to_string()];
     for r in results {
         let href = format!("/v/{}?{}", r.id, urlencode(&[("from", "search"), ("q", q)]));
-        let meta = join(&[esc(&r.channel), if r.live { "live".into() } else { duration(r.duration) },
+        let meta = join(&[channel_link(&r.channel, &r.channel_id), if r.live { "live".into() } else { duration(r.duration) },
                           progress(positions.get(&r.id))]);
         left.push(row(&thumb(&r.id, &href, None), &href, &r.title, &meta, &dl_button(&r.id, "")));
     }
@@ -244,6 +259,8 @@ fn source_label(e: &Entry) -> String {
         "saved" => "from saved".into(),
         "playlist" if !d.is_empty() => format!("playlist: {d}"),
         "playlist" => "from a playlist".into(),
+        "channel" if !d.is_empty() => format!("from channel: {d}"),
+        "channel" => "from a channel".into(),
         _ => "opened directly".into(),
     }
 }
@@ -347,7 +364,8 @@ pub fn history_page(entries: &[Entry], positions: &HashMap<String, Pos>, details
         let href = format!("/v/{}?from=history", e.id);
         let category = details.get(&e.id).map(|d| esc(&d.category)).unwrap_or_default();
         let kind = tags.kinds.get(&e.id).map(|k| esc(k)).unwrap_or_default();
-        let meta = join(&[local(e.time).format("%H:%M").to_string(), esc(&e.channel), kind, category,
+        let channel_id = details.get(&e.id).map(|d| d.channel_id.as_str()).unwrap_or("");
+        let meta = join(&[local(e.time).format("%H:%M").to_string(), channel_link(&e.channel, channel_id), kind, category,
                           esc(&source_label(e)), progress(positions.get(&e.id))]) + &tag_line(&e.id, tags);
         let title = if e.title.is_empty() { &e.id } else { &e.title };
         parts.push(row(&thumb(&e.id, &href, None), &href, title, &meta, ""));

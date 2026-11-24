@@ -5,7 +5,9 @@ pub enum Link {
     Video { id: String, start: Option<u64>, list: Option<String> },
     Playlist(String),
     Search(String),
-    /// A YouTube page we don't open (channel, home, a Mix).
+    /// "@handle", "UC..." (a channel id), "c/name" or "user/name"
+    Channel(String),
+    /// A YouTube page we don't open (home, a Mix, Shorts feed...).
     YouTube,
 }
 
@@ -82,6 +84,17 @@ pub fn classify(text: &str) -> Option<Link> {
     if parts.first() == Some(&"playlist") {
         if let Some(l) = list {
             return Some(Link::Playlist(l));
+        }
+    }
+    if let Some(first) = parts.first() {
+        if first.starts_with('@') && first.len() > 1 {
+            return Some(Link::Channel(first.to_string()));
+        }
+        if parts.len() >= 2 && *first == "channel" && parts[1].starts_with("UC") {
+            return Some(Link::Channel(parts[1].to_string()));
+        }
+        if parts.len() >= 2 && (*first == "c" || *first == "user") {
+            return Some(Link::Channel(format!("{first}/{}", parts[1])));
         }
     }
     if parts.first() == Some(&"results") {
